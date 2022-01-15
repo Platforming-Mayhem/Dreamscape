@@ -105,7 +105,7 @@ ModelImporter:
       name: JUMP
       takeName: Scene
       internalID: 0
-      firstFrame: 96
+      firstFrame: 100
       lastFrame: 110
       wrapMode: 0
       orientationOffsetY: 0
@@ -126,7 +126,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.28840983
+      - time: 0.29670858
         functionName: Jump
         data: 
         objectReferenceParameter: {instanceID: 0}

@@ -4,47 +4,78 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public Transform groundChecker;
-    public LayerMask groundMask;
-    public float radius = 0.1f;
-    public float gravityScale = 1f;
-    public float maxHeight = 1f;
+    [SerializeField] private Transform groundChecker;
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float radius = 0.1f;
+    [SerializeField] private float gravityScale = 1.0f;
+    [SerializeField] private float maxHeight = 1.0f;
+    private float height = 0.0f;
+
+    int health = 100;
+
     [Header("Animation")]
-    public AnimationCurve accelerationAndDecelerationCurve;
+    [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
     private Animator anim;
 
     private bool isGrounded;
     private bool isDropping;
-    public bool accelerate;
-    public bool decelerate;
     private bool previousGrounded;
 
-    private Rigidbody rb;
+    public bool accelerate;
+    public bool decelerate;
+
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        Collider[] colliders = FindObjectsOfType<Collider>();
-        PhysicMaterial mat = GetComponent<Collider>().material;
-        foreach (Collider c in colliders)
-        {
-            c.material = mat;
-        }
         accelerationEnd = accelerationAndDecelerationCurve.keys[1].time;
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
+        gameObject.SetActive(true);
+    }
+
+    public float GetMaxHeight()
+    {
+        return maxHeight;
+    }
+
+    public void SetHeight(float newHeight)
+    {
+        height = newHeight;
     }
 
     //Curve Equation
-    public float curveEquation(float maxHeight, float timeInterval)
+    private float curveEquation(float maxHeight, float timeInterval)
     {
         float newHeight = -((timeInterval - maxHeight) * (timeInterval - maxHeight)) + (maxHeight * maxHeight);
         return newHeight;
     }
 
-    public bool isJumping;
+    public void Jump()
+    {
+        isJumping = true;
+    }
+
+    private bool hurt = false;
+
+    private Vector2 hurtDirection = Vector2.right;
+
+    public void HurtPlayer(int amount, Vector2 enemyPosition)
+    {
+        hurtDirection = Vector2.Scale((Vector2)transform.position - enemyPosition, Vector3.right).normalized * maxHeight * 2.0f;
+        health -= amount;
+        Jump();
+        hurt = true;
+        if (health <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private bool isJumping;
 
     private float yTime = 0f;
 
@@ -52,25 +83,27 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics.CheckSphere(groundChecker.position, radius, groundMask);
+        isGrounded = Physics2D.Raycast(groundChecker.transform.position, Vector2.down, radius, groundMask);
         if (isGrounded && isJumping)
         {
             yTime = 0f;
         }
         else if (previousGrounded && !isGrounded && !isJumping)
         {
-            yTime = maxHeight * 2f;
+            yTime = height * 2f;
             isJumping = true;
         }
         if (isGrounded && !previousGrounded)
         {
             isJumping = false;
             anim.SetTrigger("Land");
+            SetHeight(0.0f);
+            hurt = false;
         }
         if (isJumping)
         {
             yTime += Time.fixedDeltaTime * 9.8f * gravityScale;
-            rb.velocity = (Vector3)new Vector2(rb.velocity.x, curveEquation(maxHeight, yTime));
+            rb.velocity = new Vector2(rb.velocity.x, curveEquation(height, yTime));
         }
     }
 
@@ -81,7 +114,7 @@ public class PlayerScript : MonoBehaviour
     private float accelerationEnd = 0f;
     private float decelerationEnd = 0f;
 
-    void AccelerateAndDecelerate(float currentX)
+    private void AccelerateAndDecelerate(float currentX)
     {
         if(currentX != 0f)
         {
@@ -121,7 +154,11 @@ public class PlayerScript : MonoBehaviour
             anim.SetBool("Walking", false);
         }
         xVelocity = accelerationAndDecelerationCurve.Evaluate(xTime) * direction;
-        rb.velocity = (Vector3)new Vector2(xVelocity, rb.velocity.y);
+        if (hurt)
+        {
+            xVelocity = hurtDirection.x;
+        }
+        rb.velocity = new Vector2(xVelocity, rb.velocity.y);
     }
 
     private bool jumpStack;
@@ -135,10 +172,17 @@ public class PlayerScript : MonoBehaviour
             anim.SetTrigger("Jump");
             jumpStack = false;
         }
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButton("Jump"))
         {
-            jumpStack = true;
             jumpTimer = 0.5f;
+            if (Input.GetButtonDown("Jump"))
+            {
+                jumpStack = true;
+            }
+            if (isGrounded && previousGrounded)
+            {
+                SetHeight(Mathf.Clamp(height + Time.deltaTime * 20.0f, 0.0f, maxHeight));
+            }
         }
         if (jumpStack)
         {
@@ -180,6 +224,6 @@ public class PlayerScript : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(groundChecker.position, radius);
+        Gizmos.DrawLine(groundChecker.position, groundChecker.position + Vector3.down * radius);
     }
 }

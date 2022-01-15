@@ -13,6 +13,6 @@ public class AnimationJumpScript : MonoBehaviour
 
     public void Jump()
     {
-        player.isJumping = true;
+        player.Jump();
     }
 }
