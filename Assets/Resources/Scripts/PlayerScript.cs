@@ -37,6 +37,7 @@ public class PlayerScript : MonoBehaviour
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
         gameObject.SetActive(true);
+        spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
     }
 
     public float GetMaxHeight()
