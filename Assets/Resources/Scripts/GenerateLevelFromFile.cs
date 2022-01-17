@@ -6,18 +6,19 @@ using UnityEngine;
 
 public class GenerateLevelFromFile : MonoBehaviour
 {
-    [SerializeField] private TextAsset level_Map;
+    public string dataPath;
     // Start is called before the first frame update
     void Start()
     {
-        LoadLevelFromFile(level_Map.text);
-        //SaveLevelToFile(Application.dataPath + "/Resources/Levels" + "/NewFile.txt");
+        LoadLevelFromFile();
+        //SaveLevelToFile(dataPath);
     }
 
     private GameObject[] resourcesGameObjects;
 
-    void LoadLevelFromFile(string lvlData)
+    public void LoadLevelFromFile()
     {
+        string lvlData = dataPath;
         string[] lvlArray = lvlData.Split('\n');
         GameObject currentObject = null;
         int lvlLength = (lvlArray.Length - 1);
@@ -28,8 +29,9 @@ public class GenerateLevelFromFile : MonoBehaviour
                 case string a when a.Contains("prefab_Type"):
                     string variableName = lvlArray[i].Replace("	prefab_Type:", "");
                     Debug.Log("Prefab: " + variableName);
-                    string path = "Level_Prefabs/" + variableName.Remove(variableName.Length - 1, 1);
+                    string path = "Level_Prefabs/" + variableName.Substring(0, variableName.Length - 2);
                     Debug.Log(path);
+                    
                     currentObject = Instantiate(Resources.Load<GameObject>(path));
                     break;
                 case string a when a.Contains("parent"):
@@ -86,8 +88,9 @@ public class GenerateLevelFromFile : MonoBehaviour
         }
     }
 
-    void SaveLevelToFile(string destination)
+    public void SaveLevelToFile()
     {
+        string destination = dataPath;
         List<GameObject> children = new List<GameObject>();
         Transform[] childs = FindObjectsOfType<Transform>();
         resourcesGameObjects = Resources.LoadAll("Level_Prefabs", typeof(GameObject)).Cast<GameObject>().ToArray();
