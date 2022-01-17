@@ -7,11 +7,33 @@ using UnityEngine;
 public class GenerateLevelFromFile : MonoBehaviour
 {
     public string dataPath;
+    PlayerScript player;
     // Start is called before the first frame update
     void Start()
     {
-        LoadLevelFromFile();
+        player = FindObjectOfType<PlayerScript>();
+        Time.timeScale = 0.0f;
+
         //SaveLevelToFile(dataPath);
+    }
+
+    public void Play()
+    {
+        Time.timeScale = 1.0f;
+        player.Respawn();
+        player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0.0f;
+    }
+
+    public void Stop()
+    {
+        Time.timeScale = 0.0f;
+        player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        player.Respawn();
     }
 
     private GameObject[] resourcesGameObjects;
@@ -19,6 +41,7 @@ public class GenerateLevelFromFile : MonoBehaviour
     public void LoadLevelFromFile()
     {
         string lvlData = dataPath;
+        lvlData = System.IO.File.ReadAllText(@lvlData);
         string[] lvlArray = lvlData.Split('\n');
         GameObject currentObject = null;
         int lvlLength = (lvlArray.Length - 1);
@@ -29,7 +52,7 @@ public class GenerateLevelFromFile : MonoBehaviour
                 case string a when a.Contains("prefab_Type"):
                     string variableName = lvlArray[i].Replace("	prefab_Type:", "");
                     Debug.Log("Prefab: " + variableName);
-                    string path = "Level_Prefabs/" + variableName.Substring(0, variableName.Length - 2);
+                    string path = "Level_Prefabs/" + variableName.Substring(0, variableName.Length - 1);
                     Debug.Log(path);
                     
                     currentObject = Instantiate(Resources.Load<GameObject>(path));

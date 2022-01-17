@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventoryScript : MonoBehaviour
 {
     GameObject selectedGameObject;
+    [SerializeField] private GameObject transformPrefab;
 
     public void SpawnObject(GameObject gameObject)
     {
@@ -39,6 +40,8 @@ public class InventoryScript : MonoBehaviour
         selectedGameObject.transform.position = (Vector3)GetMousePosition() + Vector3.forward * selectedGameObject.transform.position.z;
     }
 
+    private GameObject transformGizmo;
+
     // Update is called once per frame
     void Update()
     {
@@ -49,16 +52,19 @@ public class InventoryScript : MonoBehaviour
                 if (child.parent.name == "Boxes" && CheckForColliding(child))
                 {
                     selectedGameObject = child.gameObject;
+                    transformGizmo = Instantiate(transformPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
                 }
             }
         }
         else if (Input.GetMouseButtonUp(0))
         {
             selectedGameObject = null;
+            Destroy(transformGizmo);
         }
         if (Input.GetMouseButton(0) && selectedGameObject != null)
         {
             MoveSelectedToMouse();
+            transformGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
         }
     }
 }

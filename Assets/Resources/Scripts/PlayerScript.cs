@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     [SerializeField] private Animator DeathScreen;
-    [SerializeField] private Transform spawnpoint;
+    public Transform spawnpoint;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float radius = 0.1f;
