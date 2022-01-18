@@ -13,8 +13,6 @@ public class GenerateLevelFromFile : MonoBehaviour
     {
         player = FindObjectOfType<PlayerScript>();
         Time.timeScale = 0.0f;
-
-        //SaveLevelToFile(dataPath);
     }
 
     public void Play()

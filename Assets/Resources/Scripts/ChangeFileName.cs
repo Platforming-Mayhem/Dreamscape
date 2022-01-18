@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using SFB;
 
 public class ChangeFileName : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ChangeFileName : MonoBehaviour
     private void Start()
     {
         g = FindObjectOfType<GenerateLevelFromFile>();
+        CreateWindow();
     }
 
     public void ChangeName()
@@ -19,6 +21,6 @@ public class ChangeFileName : MonoBehaviour
 
     public void CreateWindow()
     {
-
+        StandaloneFileBrowser.OpenFilePanel("Open", "C:", ".txt", false);
     }
 }
