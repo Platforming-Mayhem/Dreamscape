@@ -7,6 +7,7 @@ public class InventoryScript : MonoBehaviour
     GameObject selectedGameObject;
     [SerializeField] private GameObject transformPrefab;
     [SerializeField] private GameObject rotationPrefab;
+    [SerializeField] private GameObject scalePrefab;
 
     public void SpawnObject(GameObject gameObject)
     {
@@ -50,12 +51,15 @@ public class InventoryScript : MonoBehaviour
 
     private void ScaleSelectedToMouse()
     {
-        selectedGameObject.transform.localScale += 
+        selectedGameObject.transform.localScale += Input.GetAxis("Mouse X") * Vector3.right;
+        selectedGameObject.transform.localScale += Input.GetAxis("Mouse Y") * Vector3.up;
     }
 
     private GameObject transformGizmo;
 
     private GameObject rotationGizmo;
+
+    private GameObject scaleGizmo;
 
     private enum GizmoType {Transform, Rotation, Scale};
 
@@ -79,6 +83,10 @@ public class InventoryScript : MonoBehaviour
                     {
                         rotationGizmo = Instantiate(rotationPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
                     }
+                    else if (gizmoType == GizmoType.Scale)
+                    {
+                        scaleGizmo = Instantiate(scalePrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+                    }
                 }
             }
         }
@@ -87,6 +95,7 @@ public class InventoryScript : MonoBehaviour
             selectedGameObject = null;
             Destroy(transformGizmo);
             Destroy(rotationGizmo);
+            Destroy(scaleGizmo);
         }
         if (Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Transform)
         {
@@ -97,6 +106,11 @@ public class InventoryScript : MonoBehaviour
         {
             RotateSelectedToMouse();
             rotationGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
+        }
+        else if (Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Scale)
+        {
+            ScaleSelectedToMouse();
+            scaleGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
         }
         if (Input.GetKeyDown(KeyCode.W))
         {

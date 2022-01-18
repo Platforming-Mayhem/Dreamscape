@@ -16,4 +16,9 @@ public class ChangeFileName : MonoBehaviour
     {
         g.dataPath = text.text;
     }
+
+    public void CreateWindow()
+    {
+
+    }
 }
