@@ -6,6 +6,7 @@ public class InventoryScript : MonoBehaviour
 {
     GameObject selectedGameObject;
     [SerializeField] private GameObject transformPrefab;
+    [SerializeField] private GameObject rotationPrefab;
 
     public void SpawnObject(GameObject gameObject)
     {
@@ -40,7 +41,25 @@ public class InventoryScript : MonoBehaviour
         selectedGameObject.transform.position = (Vector3)GetMousePosition() + Vector3.forward * selectedGameObject.transform.position.z;
     }
 
+    private void RotateSelectedToMouse()
+    {
+        Vector2 direction = ((Vector2)selectedGameObject.transform.position - GetMousePosition()).normalized;
+        selectedGameObject.transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg));
+        rotationGizmo.transform.rotation = Quaternion.Euler(new Vector3(0.0f, 0.0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg));
+    }
+
+    private void ScaleSelectedToMouse()
+    {
+        selectedGameObject.transform.localScale += 
+    }
+
     private GameObject transformGizmo;
+
+    private GameObject rotationGizmo;
+
+    private enum GizmoType {Transform, Rotation, Scale};
+
+    private GizmoType gizmoType = GizmoType.Transform;
 
     // Update is called once per frame
     void Update()
@@ -52,7 +71,14 @@ public class InventoryScript : MonoBehaviour
                 if (child.parent.name == "Boxes" && CheckForColliding(child))
                 {
                     selectedGameObject = child.gameObject;
-                    transformGizmo = Instantiate(transformPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+                    if(gizmoType == GizmoType.Transform)
+                    {
+                        transformGizmo = Instantiate(transformPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+                    }
+                    else if (gizmoType == GizmoType.Rotation)
+                    {
+                        rotationGizmo = Instantiate(rotationPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+                    }
                 }
             }
         }
@@ -60,11 +86,29 @@ public class InventoryScript : MonoBehaviour
         {
             selectedGameObject = null;
             Destroy(transformGizmo);
+            Destroy(rotationGizmo);
         }
-        if (Input.GetMouseButton(0) && selectedGameObject != null)
+        if (Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Transform)
         {
             MoveSelectedToMouse();
             transformGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
+        }
+        else if(Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Rotation)
+        {
+            RotateSelectedToMouse();
+            rotationGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            gizmoType = GizmoType.Transform;
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            gizmoType = GizmoType.Rotation;
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            gizmoType = GizmoType.Scale;
         }
     }
 }

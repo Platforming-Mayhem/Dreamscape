@@ -2968,6 +2968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformPrefab: {fileID: 6828642651774467794, guid: 61dd14e3782c70a4ca5b2c8f3aa4943c,
     type: 3}
+  rotationPrefab: {fileID: 6828642651774467794, guid: f81bc68acb0eeed4a8b25a82107a87b4,
+    type: 3}
 --- !u!114 &1781939877
 MonoBehaviour:
   m_ObjectHideFlags: 0
