@@ -164,7 +164,7 @@ public class GenerateLevelFromFile : MonoBehaviour
         '\t' + $"prefab_Type:{temp[i].name} " + '\n' +
         '\t' + $"parent:{temp[i].transform.parent.name}" + '\n' +
         '\t' + $"position: ({temp[i].transform.position.x},{temp[i].transform.position.y} )" + '\n' +
-        '\t' + $"rotation: ({temp[i].transform.rotation.x},{temp[i].transform.rotation.y} ,{temp[i].transform.rotation.z} )" + '\n' +
+        '\t' + $"rotation: ({temp[i].transform.eulerAngles.x},{temp[i].transform.eulerAngles.y} ,{temp[i].transform.eulerAngles.z} )" + '\n' +
         '\t' + $"scale: ({temp[i].transform.localScale.x},{temp[i].transform.localScale.y} ,{temp[i].transform.localScale.z} )" + '\n' +
         "};" + '\n';
         }
