@@ -8,6 +8,14 @@ public class InventoryScript : MonoBehaviour
     [SerializeField] private GameObject transformPrefab;
     [SerializeField] private GameObject rotationPrefab;
     [SerializeField] private GameObject scalePrefab;
+    [SerializeField] private GameObject binPrefab;
+    [SerializeField] private GameObject originPrefab;
+    [SerializeField] private GameObject levelMapEditor;
+
+    [SerializeField] private GameObject makeSureDelete;
+
+    private GenerateLevelFromFile generate;
+
 
     public void SpawnObject(GameObject gameObject)
     {
@@ -17,7 +25,7 @@ public class InventoryScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        generate = FindObjectOfType<GenerateLevelFromFile>();
     }
 
     private Vector2 GetMousePosition()
@@ -27,7 +35,7 @@ public class InventoryScript : MonoBehaviour
 
     private bool CheckForColliding(Transform colliderObject)
     {
-        if((GetMousePosition() - (Vector2)colliderObject.transform.position).magnitude <= 2.0f)
+        if ((GetMousePosition() - (Vector2)colliderObject.transform.position).magnitude <= 2.0f)
         {
             return true;
         }
@@ -61,9 +69,15 @@ public class InventoryScript : MonoBehaviour
 
     private GameObject scaleGizmo;
 
-    private enum GizmoType {Transform, Rotation, Scale};
+    private GameObject binGizmo;
 
-    private GizmoType gizmoType = GizmoType.Transform;
+    private enum GizmoType { None, Transform, Rotation, Scale, Delete };
+
+    private enum HideType { Hidden, Not_Hidden };
+
+    private GizmoType gizmoType = GizmoType.None;
+
+    private HideType hideType = HideType.Hidden;
 
     // Update is called once per frame
     void Update()
@@ -75,17 +89,10 @@ public class InventoryScript : MonoBehaviour
                 if (child.parent.name == "Boxes" && CheckForColliding(child))
                 {
                     selectedGameObject = child.gameObject;
-                    if(gizmoType == GizmoType.Transform)
+                    if (gizmoType == GizmoType.Delete)
                     {
-                        transformGizmo = Instantiate(transformPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
-                    }
-                    else if (gizmoType == GizmoType.Rotation)
-                    {
-                        rotationGizmo = Instantiate(rotationPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
-                    }
-                    else if (gizmoType == GizmoType.Scale)
-                    {
-                        scaleGizmo = Instantiate(scalePrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+                        makeSureDelete.SetActive(true);
+                        generate.gameObjectToDelete = selectedGameObject;
                     }
                 }
             }
@@ -93,9 +100,6 @@ public class InventoryScript : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             selectedGameObject = null;
-            Destroy(transformGizmo);
-            Destroy(rotationGizmo);
-            Destroy(scaleGizmo);
         }
         if (Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Transform)
         {
@@ -105,24 +109,131 @@ public class InventoryScript : MonoBehaviour
         else if(Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Rotation)
         {
             RotateSelectedToMouse();
-            rotationGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
+            rotationGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * rotationPrefab.transform.position.z;
         }
         else if (Input.GetMouseButton(0) && selectedGameObject != null && gizmoType == GizmoType.Scale)
         {
             ScaleSelectedToMouse();
-            scaleGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
+            scaleGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * scalePrefab.transform.position.z;
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            gizmoType = GizmoType.None;
+            Destroy(transformGizmo);
+            Destroy(rotationGizmo);
+            Destroy(scaleGizmo);
+            Destroy(binGizmo);
+            foreach (Transform child in FindObjectsOfType<Transform>())
+            {
+                if (child.CompareTag("Origin"))
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+            if(hideType == HideType.Hidden)
+            {
+                hideType = HideType.Not_Hidden;
+            }
+            else
+            {
+                hideType = HideType.Hidden;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             gizmoType = GizmoType.Transform;
+            if (transformGizmo == null)
+            {
+                transformGizmo = Instantiate(transformPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+            }
+            Destroy(binGizmo);
+            Destroy(rotationGizmo);
+            Destroy(scaleGizmo);
+            foreach (Transform child in GameObject.Find("Boxes").transform)
+            {
+                if (child.parent.name == "Boxes")
+                {
+                    Instantiate(originPrefab, child.transform.position, Quaternion.identity).tag = "Origin";
+                }
+            }
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
             gizmoType = GizmoType.Rotation;
+            if(rotationGizmo == null)
+            {
+                rotationGizmo = Instantiate(rotationPrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+            }
+            Destroy(binGizmo);
+            Destroy(transformGizmo);
+            Destroy(scaleGizmo);
+            foreach (Transform child in GameObject.Find("Boxes").transform)
+            {
+                if (child.parent.name == "Boxes")
+                {
+                    Instantiate(originPrefab, child.transform.position, Quaternion.identity).tag = "Origin";
+                }
+            }
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {
             gizmoType = GizmoType.Scale;
+            if (scaleGizmo == null)
+            {
+                scaleGizmo = Instantiate(scalePrefab, (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z, Quaternion.identity);
+            }
+            Destroy(binGizmo);
+            Destroy(transformGizmo);
+            Destroy(rotationGizmo);
+            foreach (Transform child in GameObject.Find("Boxes").transform)
+            {
+                if (child.parent.name == "Boxes")
+                {
+                    Instantiate(originPrefab, child.transform.position, Quaternion.identity).tag = "Origin";
+                }
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.X))
+        {
+            gizmoType = GizmoType.Delete;
+            if(binGizmo == null)
+            {
+                binGizmo = Instantiate(binPrefab, (Vector3)GetMousePosition() + Vector3.forward * binPrefab.transform.position.z, Quaternion.identity);
+            }
+            Destroy(transformGizmo);
+            Destroy(rotationGizmo);
+            Destroy(scaleGizmo);
+            foreach (Transform child in GameObject.Find("Boxes").transform)
+            {
+                if (child.parent.name == "Boxes")
+                {
+                    Instantiate(originPrefab, child.transform.position, Quaternion.identity).tag = "Origin";
+                }
+            }
+        }
+        if(transformGizmo != null)
+        {
+            transformGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * transformPrefab.transform.position.z;
+        }
+        else if (rotationGizmo != null)
+        {
+            rotationGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * rotationPrefab.transform.position.z;
+        }
+        else if (scaleGizmo != null)
+        {
+            scaleGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * scalePrefab.transform.position.z;
+        }
+        else if (binGizmo != null)
+        {
+            binGizmo.transform.position = (Vector3)GetMousePosition() + Vector3.forward * binPrefab.transform.position.z;
+        }
+        if(hideType == HideType.Hidden)
+        {
+            levelMapEditor.SetActive(false);
+        }
+        else
+        {
+            levelMapEditor.SetActive(true);
         }
     }
 }

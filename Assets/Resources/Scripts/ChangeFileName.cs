@@ -11,7 +11,6 @@ public class ChangeFileName : MonoBehaviour
     private void Start()
     {
         g = FindObjectOfType<GenerateLevelFromFile>();
-        CreateWindow();
     }
 
     public void ChangeName()
@@ -21,6 +20,13 @@ public class ChangeFileName : MonoBehaviour
 
     public void CreateWindow()
     {
-        StandaloneFileBrowser.OpenFilePanel("Open", "C:", ".txt", false);
+        text.text = StandaloneFileBrowser.OpenFilePanel("Open", "", "txt", false)[0];
+        g.LoadLevelFromFile();
+    }
+
+    public void SaveFile()
+    {
+        text.text = StandaloneFileBrowser.SaveFilePanel("Save", "", "Level", "txt");
+        g.SaveLevelToFile();
     }
 }

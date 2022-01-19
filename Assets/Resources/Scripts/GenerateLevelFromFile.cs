@@ -7,6 +7,11 @@ using UnityEngine;
 public class GenerateLevelFromFile : MonoBehaviour
 {
     public string dataPath;
+
+    public GameObject gameObjectToDelete;
+
+    [SerializeField] private GameObject makeSureDelete;
+
     PlayerScript player;
     // Start is called before the first frame update
     void Start()
@@ -15,11 +20,22 @@ public class GenerateLevelFromFile : MonoBehaviour
         Time.timeScale = 0.0f;
     }
 
+    public void DeleteObject()
+    {
+        Destroy(gameObjectToDelete);
+        makeSureDelete.SetActive(false);
+    }
+
+    public void DontDeleteObject()
+    {
+        gameObjectToDelete = null;
+        makeSureDelete.SetActive(false);
+    }
+
     public void Play()
     {
         Time.timeScale = 1.0f;
-        player.Respawn();
-        player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        Camera.main.orthographicSize = 5.0f;
     }
 
     public void Pause()

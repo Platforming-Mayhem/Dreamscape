@@ -83,6 +83,7 @@ public class PlayerScript : MonoBehaviour
         health = 100;
         direction = 1.0f;
         rb.velocity = Vector2.zero;
+        spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
         transform.position = spawnpoint.position;
         gameObject.SetActive(true);
         DeathScreen.SetTrigger("close");
@@ -266,6 +267,10 @@ public class PlayerScript : MonoBehaviour
         JumpUpdate();
         ChangeDirection();
         AccelerateAndDecelerate(Input.GetAxis("Horizontal"));
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Death();
+        }
     }
 
     private void LateUpdate()
