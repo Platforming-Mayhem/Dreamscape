@@ -297,5 +297,6 @@ public class PlayerScript : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundChecker.position, radius);
+        Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
     }
 }
