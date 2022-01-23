@@ -27,12 +27,14 @@ public class PlayerScript : MonoBehaviour
     public bool decelerate;
 
     private Rigidbody2D rb;
+    private SpriteRenderer sprite;
 
     // Start is called before the first frame update
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
         accelerationEnd = accelerationAndDecelerationCurve.keys[1].time;
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
@@ -53,7 +55,7 @@ public class PlayerScript : MonoBehaviour
     //Curve Equation
     private float curveEquation(float maxHeight, float timeInterval)
     {
-        float newHeight = -((timeInterval - maxHeight) * (timeInterval - maxHeight)) + (maxHeight * maxHeight);
+        float newHeight = ((-Mathf.Pow(((timeInterval - maxHeight)), 2.0f) + Mathf.Pow(maxHeight, 2.0f)) * Mathf.Pow(-timeInterval + 2.0f * maxHeight, 2.0f))/1.688f;
         return newHeight;
     }
 
@@ -103,7 +105,7 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.Raycast(groundChecker.transform.position, Vector2.down, radius, groundMask);
+        isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
         if(previousGrounded && !isGrounded)
         {
             coyoteTimer = (float)(9.0f/60.0f);
@@ -144,11 +146,11 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 jumpStack = true;
-                jumpTimer = 0.5f;
+                jumpTimer = .5f;
             }
             if (isGrounded && previousGrounded || coyoteTimer > 0.0f)
             {
-                SetHeight(Mathf.Clamp(height + Time.deltaTime * 20.0f, 0.0f, maxHeight));
+                SetHeight(Mathf.Clamp(height + Time.deltaTime * gravityScale * 9.8f, 0.0f, maxHeight));
             }
         }
         if (jumpStack)
@@ -191,9 +193,13 @@ public class PlayerScript : MonoBehaviour
             }
             direction = -1f;
         }
-        if(rb.velocity.x != 0.0f)
+        if(rb.velocity.x > 0.0f)
         {
-            transform.right = (Vector3.right * rb.velocity.x).normalized;
+            sprite.flipX = false;
+        }
+        else if(rb.velocity.x < 0.0f)
+        {
+            sprite.flipX = true;
         }
     }
 
@@ -265,12 +271,20 @@ public class PlayerScript : MonoBehaviour
     {
         CoyoteTime();
         JumpUpdate();
-        ChangeDirection();
         AccelerateAndDecelerate(Input.GetAxis("Horizontal"));
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Death();
         }
+        if(isGrounded || previousGrounded)
+        {
+            transform.up = Vector3.Lerp(transform.up, Physics2D.Raycast(groundChecker.transform.position, Vector2.down, radius, groundMask).normal, Time.deltaTime * 10.0f);
+        }
+        else
+        {
+            transform.up = Vector3.Lerp(transform.up, Vector3.up, Time.deltaTime * 20.0f);
+        }
+        ChangeDirection();
     }
 
     private void LateUpdate()
@@ -282,6 +296,6 @@ public class PlayerScript : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(groundChecker.position, groundChecker.position + Vector3.down * radius);
+        Gizmos.DrawWireSphere(groundChecker.position, radius);
     }
 }

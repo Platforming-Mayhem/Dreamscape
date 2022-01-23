@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using SFB;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -16,12 +17,37 @@ public class NPCDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ReadFromFile();
     }
 
     private bool IsOverFlowing()
     {
         return tmpText.GetPreferredValues().y > 53.7f;
+    }
+
+    void ReadFromFile()
+    {
+        string destination = StandaloneFileBrowser.OpenFilePanel("Open", "", "txt", false)[0];
+        string text = System.IO.File.ReadAllText(@destination);
+        string[] splitText = text.Split(':', '\n');
+        for(int i = 0; i < splitText.Length; i++)
+        {
+            if(i % 2 == 0)
+            {
+                Debug.Log("Name: " + splitText[i]);
+                foreach(GameObject gameObject in FindObjectsOfType<GameObject>())
+                {
+                    if(gameObject.name == splitText[i])
+                    {
+                        Debug.Log("Found!");
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Text: " + splitText[i]);
+            }
+        }
     }
 
     IEnumerator TextAppear()
@@ -61,7 +87,13 @@ public class NPCDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Cancel"))
+        {
+            tmpText.text = "";
+            tmpText.pageToDisplay = 1;
+            pageNumber = 1;
+            gameObject.SetActive(false);
+        }
     }
 
     private void LateUpdate()

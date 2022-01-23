@@ -82,3 +82,17 @@
 	rotation: (0,0 ,0 )
 	scale: (12.08862,4.852125 ,1 )
 };
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (57.04897,-14.72668 )
+	rotation: (0,0 ,173.0488 )
+	scale: (16.4,20.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (62.01484,-15.69028 )
+	rotation: (0,0 ,0 )
+	scale: (9.199993,22.44999 ,1 )
+};
