@@ -1,4 +1,11 @@
 {
+	prefab_Type:Initial 
+	parent:Boxes
+	position: (-18.15518,-2.566767 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
 	prefab_Type:Death_Thing 
 	parent:Boxes
 	position: (108.6771,4.131873 )
@@ -475,9 +482,16 @@
 	scale: (2.799999,2.099999 ,1 )
 };
 {
-	prefab_Type:Initial 
+	prefab_Type:NPC 
 	parent:Boxes
-	position: (-18.08352,-2.569083 )
+	position: (-14.52227,-2.609958 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	position: (35.30224,-2.591602 )
 	rotation: (0,0 ,0 )
 	scale: (1,1 ,1 )
 };
