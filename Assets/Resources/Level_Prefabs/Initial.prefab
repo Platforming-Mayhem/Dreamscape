@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 4742981610525117219}
   - component: {fileID: 1476933935142635321}
   - component: {fileID: 3881167381762338479}
-  - component: {fileID: -7448117154591990713}
   m_Layer: 2
-  m_Name: Spawnpoint
+  m_Name: Initial
   m_TagString: Spawnpoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 300f43699e3495d418c117394f31ba69, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.6520562, a: 1}
+  m_Color: {r: 1, g: 0.9332712, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -111,17 +110,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.8500001}
   m_EdgeRadius: 0
---- !u!114 &-7448117154591990713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4742981610525117218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 718748ed7cf953446ae3910e9157d1c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activatedColour: {r: 0, g: 1, b: 0.6509804, a: 1}
-  deactivatedColour: {r: 0.33530614, g: 0.5188679, b: 0.4148438, a: 1}

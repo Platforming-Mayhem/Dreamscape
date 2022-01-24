@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using SFB;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -12,12 +11,14 @@ public class NPCDialogue : MonoBehaviour
 
     [SerializeField] private TMP_Text tmpText;
 
-    [SerializeField] private int previousPageNumber = 0;
+    private Animator anim;
+
+    private int previousPageNumber = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        ReadFromFile();
+        anim = GetComponent<Animator>();
     }
 
     private bool IsOverFlowing()
@@ -25,37 +26,11 @@ public class NPCDialogue : MonoBehaviour
         return tmpText.GetPreferredValues().y > 53.7f;
     }
 
-    void ReadFromFile()
-    {
-        string destination = StandaloneFileBrowser.OpenFilePanel("Open", "", "txt", false)[0];
-        string text = System.IO.File.ReadAllText(@destination);
-        string[] splitText = text.Split(':', '\n');
-        for(int i = 0; i < splitText.Length; i++)
-        {
-            if(i % 2 == 0)
-            {
-                Debug.Log("Name: " + splitText[i]);
-                foreach(GameObject gameObject in FindObjectsOfType<GameObject>())
-                {
-                    if(gameObject.name == splitText[i])
-                    {
-                        Debug.Log("Found!");
-                    }
-                }
-            }
-            else
-            {
-                Debug.Log("Text: " + splitText[i]);
-            }
-        }
-    }
-
     IEnumerator TextAppear()
     {
         tmpText.text = "";
         foreach (char a in text)
         {
-            previousPageNumber = tmpText.textInfo.pageCount;
             if (Input.GetButton("Submit"))
             {
                 tmpText.text += a;
@@ -75,29 +50,38 @@ public class NPCDialogue : MonoBehaviour
                 pageNumber = 1;
             }
             tmpText.pageToDisplay = pageNumber;
+            previousPageNumber = tmpText.textInfo.pageCount;
         }
-    }
-
-    private void OnEnable()
-    {
-        StartCoroutine("TextAppear");
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        
+    }
+
+    private void OnBecameInvisible()
+    {
+        tmpText.text = "";
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
         {
-            tmpText.text = "";
-            tmpText.pageToDisplay = 1;
-            pageNumber = 1;
-            gameObject.SetActive(false);
+            StartCoroutine("TextAppear");
+            anim.SetTrigger("Open");
+            anim.ResetTrigger("Close");
         }
     }
 
-    private void LateUpdate()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player"))
+        {
+            StopCoroutine("TextAppear");
+            anim.SetTrigger("Close");
+            anim.ResetTrigger("Open");
+        }
     }
 }

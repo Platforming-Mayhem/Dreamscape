@@ -83,7 +83,8 @@ public class PlayerScript : MonoBehaviour
     public void Respawn()
     {
         health = 100;
-        direction = 1.0f;
+        direction = 0.0f;
+        hurtDirection = Vector2.zero;
         rb.velocity = Vector2.zero;
         spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
         transform.position = spawnpoint.position;
@@ -154,8 +155,6 @@ public class PlayerScript : MonoBehaviour
                 SetHeight(Mathf.Clamp(height + (Time.deltaTime * 0.9f) * gravityScale * 9.8f, 0.0f, maxHeight));
             }
         }
-
-        Debug.Log(height);
 
         if (jumpStack)
         {
