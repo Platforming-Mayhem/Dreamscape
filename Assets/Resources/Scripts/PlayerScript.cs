@@ -148,11 +148,15 @@ public class PlayerScript : MonoBehaviour
                 jumpStack = true;
                 jumpTimer = .5f;
             }
-            if (isGrounded && previousGrounded || coyoteTimer > 0.0f)
+
+            if (isGrounded || coyoteTimer > 0.0f)
             {
-                SetHeight(Mathf.Clamp(height + Time.deltaTime * gravityScale * 9.8f, 0.0f, maxHeight));
+                SetHeight(Mathf.Clamp(height + (Time.deltaTime * 0.9f) * gravityScale * 9.8f, 0.0f, maxHeight));
             }
         }
+
+        Debug.Log(height);
+
         if (jumpStack)
         {
             if (jumpTimer > 0.0f)
