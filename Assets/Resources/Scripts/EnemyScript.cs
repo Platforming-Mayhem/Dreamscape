@@ -7,6 +7,9 @@ public class EnemyScript : MonoBehaviour
 {
     private enum EnemyType { Ranged, CloseCombat};
     [SerializeField] private EnemyType enemyType;
+    [SerializeField] private float radius = 0.1f;
+    [SerializeField] private Transform groundChecker;
+    [SerializeField] private LayerMask groundMask;
 
     [Header("Animation")]
     [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
@@ -14,6 +17,7 @@ public class EnemyScript : MonoBehaviour
     private float accelerationTime = 0.0f;
     private bool accelerate;
     private bool decelerate;
+    private bool isGrounded;
     private SpriteRenderer sprite;
     private PlayerScript playerScript;
     private Rigidbody2D rb;
@@ -24,12 +28,21 @@ public class EnemyScript : MonoBehaviour
         playerScript = FindObjectOfType<PlayerScript>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        accelerationEnd = accelerationAndDecelerationCurve.keys[1].time;
+        decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
+        xTime = decelerationEnd;
         Vector2 direction = (playerScript.transform.position - transform.position);
     }
 
     private void RangedEnemy()
     {
 
+    }
+
+    private float curveEquation(float maxHeight, float timeInterval)
+    {
+        float newHeight = ((-Mathf.Pow(((timeInterval - maxHeight)), 2.0f) + Mathf.Pow(maxHeight, 2.0f)) * Mathf.Pow(-timeInterval + 2.0f * maxHeight, 2.0f)) / 1.688f;
+        return newHeight;
     }
 
     private float previousX = 0f;
@@ -122,6 +135,11 @@ public class EnemyScript : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -132,11 +150,18 @@ public class EnemyScript : MonoBehaviour
         else if(enemyType == EnemyType.CloseCombat)
         {
             CloseCombatEnemy();
-            AccelerateAndDecelerate((playerScript.transform.position - transform.position).normalized.x);
+            AccelerateAndDecelerate((playerScript.transform.position - transform.position).x);
         }
+        ChangeDirection();
     }
     private void LateUpdate()
     {
-        previousX = (playerScript.transform.position - transform.position).normalized.x;
+        previousX = (playerScript.transform.position - transform.position).x;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(groundChecker.position, radius);
+        Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
     }
 }
