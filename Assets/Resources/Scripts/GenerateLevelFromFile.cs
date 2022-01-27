@@ -76,6 +76,11 @@ public class GenerateLevelFromFile : MonoBehaviour
                     Debug.Log("Parent: " + parentName);
                     currentObject.transform.parent = GameObject.Find("Boxes").transform;
                     break;
+                case string a when a.Contains("text"):
+                    string npcText = a.Replace("	text:", "");
+                    Debug.Log("Text: " + npcText);
+                    currentObject.GetComponentInChildren<NPCDialogue>().text = npcText;
+                    break;
                 case string a when a.Contains("position"):
                     string positionText = a;
                     positionText = positionText.Replace("	position: (", "");
@@ -123,6 +128,8 @@ public class GenerateLevelFromFile : MonoBehaviour
                     break;
             }
         }
+        player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        player.Respawn();
     }
 
     public void SaveLevelToFile()
@@ -163,6 +170,7 @@ public class GenerateLevelFromFile : MonoBehaviour
         "{" + '\n' +
         '\t' + $"prefab_Type:{temp[i].name} " + '\n' +
         '\t' + $"parent:{temp[i].transform.parent.name}" + '\n' +
+        '\t' + $"text:{temp[i].GetComponentInChildren<NPCDialogue>().text}" + '\n' +
         '\t' + $"position: ({temp[i].transform.position.x},{temp[i].transform.position.y} )" + '\n' +
         '\t' + $"rotation: ({temp[i].transform.eulerAngles.x},{temp[i].transform.eulerAngles.y} ,{temp[i].transform.eulerAngles.z} )" + '\n' +
         '\t' + $"scale: ({temp[i].transform.localScale.x},{temp[i].transform.localScale.y} ,{temp[i].transform.localScale.z} )" + '\n' +

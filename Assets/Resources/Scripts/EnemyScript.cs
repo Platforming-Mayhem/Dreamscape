@@ -18,6 +18,9 @@ public class EnemyScript : MonoBehaviour
     private bool accelerate;
     private bool decelerate;
     private bool isGrounded;
+    private bool previousGrounded;
+    private bool L;
+    private bool R;
     private SpriteRenderer sprite;
     private PlayerScript playerScript;
     private Rigidbody2D rb;
@@ -135,9 +138,36 @@ public class EnemyScript : MonoBehaviour
         
     }
 
+    private bool jump;
+    private bool isJumping;
+    private float yTime = 0.0f;
+    private float height = 1.6f;
+
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
+        L = Physics2D.Raycast(groundChecker.transform.position, (Vector2.down + Vector2.left) * 0.5f, 1.0f, groundMask);
+        R = Physics2D.Raycast(groundChecker.transform.position, (Vector2.down + Vector2.right) * 0.5f, 1.0f, groundMask);
+        if (jump && isGrounded)
+        {
+            isJumping = true;
+            yTime = 0.0f;
+            jump = false;
+        }
+        if(!isGrounded && previousGrounded && !isJumping)
+        {
+            yTime = 0.0f;
+        }
+        if (!isGrounded && !isJumping)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, curveEquation(0.0f, yTime));
+            yTime += Time.fixedDeltaTime * 9.8f;
+        }
+        if(isJumping)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, curveEquation(height, yTime));
+            yTime += Time.fixedDeltaTime * 9.8f;
+        }
     }
 
     // Update is called once per frame
@@ -150,18 +180,28 @@ public class EnemyScript : MonoBehaviour
         else if(enemyType == EnemyType.CloseCombat)
         {
             CloseCombatEnemy();
-            AccelerateAndDecelerate((playerScript.transform.position - transform.position).x);
+            if(L && R)
+            {
+                AccelerateAndDecelerate((playerScript.transform.position - transform.position).x);
+            }
+            else
+            {
+                rb.velocity = Vector2.zero;
+            }
         }
         ChangeDirection();
     }
     private void LateUpdate()
     {
         previousX = (playerScript.transform.position - transform.position).x;
+        previousGrounded = isGrounded;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundChecker.position, radius);
         Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
+        Gizmos.DrawRay(groundChecker.transform.position, (Vector2.down + Vector2.left) * 0.5f);
+        Gizmos.DrawRay(groundChecker.transform.position, (Vector2.down + Vector2.right) * 0.5f);
     }
 }
