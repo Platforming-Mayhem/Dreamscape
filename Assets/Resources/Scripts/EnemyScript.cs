@@ -7,10 +7,14 @@ public class EnemyScript : MonoBehaviour
 {
     private enum EnemyType { Ranged, CloseCombat};
     [SerializeField] private EnemyType enemyType;
-    [SerializeField] private Vector2 offset;
-    [SerializeField] private float distanceToAttack = 1.0f;
 
-    private Vector3 finalPosition;
+    [Header("Animation")]
+    [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
+
+    private float accelerationTime = 0.0f;
+    private bool accelerate;
+    private bool decelerate;
+    private SpriteRenderer sprite;
     private PlayerScript playerScript;
     private Rigidbody2D rb;
 
@@ -19,6 +23,8 @@ public class EnemyScript : MonoBehaviour
     {
         playerScript = FindObjectOfType<PlayerScript>();
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
+        Vector2 direction = (playerScript.transform.position - transform.position);
     }
 
     private void RangedEnemy()
@@ -26,18 +32,94 @@ public class EnemyScript : MonoBehaviour
 
     }
 
-    private void CloseCombatEnemy()
+    private float previousX = 0f;
+    private float xTime = 0f;
+    private float direction = 1f;
+    private float xVelocity;
+    private bool hurt = false;
+    private Vector2 hurtDirection = Vector2.right;
+
+    private void ChangeDirection()
     {
-        Vector2 direction = Vector2.zero;
-        if((playerScript.transform.position - finalPosition).magnitude <= distanceToAttack)
+        if (previousX > 0f)
         {
-            direction = Vector2.Scale((playerScript.transform.position - transform.position).normalized, Vector2.right);
-            rb.velocity = direction;
+            if (direction == -1f)
+            {
+                xTime = 0f;
+            }
+            direction = 1f;
+        }
+        else if (previousX < 0f)
+        {
+            if (direction == 1f)
+            {
+                xTime = 0f;
+            }
+            direction = -1f;
+        }
+        if (rb.velocity.x > 0.0f)
+        {
+            sprite.flipX = false;
+        }
+        else if (rb.velocity.x < 0.0f)
+        {
+            sprite.flipX = true;
+        }
+    }
+
+    private float accelerationEnd = 0f;
+    private float decelerationEnd = 0f;
+
+    private void AccelerateAndDecelerate(float currentX)
+    {
+        if (currentX != 0f)
+        {
+            accelerate = true;
+            if (previousX == 0f)
+            {
+                if (xTime > accelerationEnd)
+                {
+                    xTime = (decelerationEnd - xTime);
+                }
+                else
+                {
+                    xTime = (accelerationEnd - xTime);
+                }
+                decelerate = false;
+            }
         }
         else
         {
-            direction = Vector2.zero;
+            accelerate = false;
+            if (previousX != 0f)
+            {
+                decelerate = true;
+                xTime = accelerationEnd;
+            }
         }
+        if (accelerate)
+        {
+            xTime += Time.deltaTime;
+            xTime = Mathf.Clamp(xTime, 0f, accelerationEnd);
+            //anim.SetBool("Walking", true);
+        }
+        else if (decelerate)
+        {
+            xTime += Time.deltaTime;
+            xTime = Mathf.Clamp(xTime, accelerationEnd, decelerationEnd);
+            //anim.SetBool("Walking", false);
+        }
+        xVelocity = accelerationAndDecelerationCurve.Evaluate(xTime) * direction;
+        if (hurt)
+        {
+            xVelocity = hurtDirection.x;
+        }
+        rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+    }
+
+    private void CloseCombatEnemy()
+    {
+        
     }
 
     // Update is called once per frame
@@ -50,12 +132,11 @@ public class EnemyScript : MonoBehaviour
         else if(enemyType == EnemyType.CloseCombat)
         {
             CloseCombatEnemy();
+            AccelerateAndDecelerate((playerScript.transform.position - transform.position).normalized.x);
         }
-        finalPosition = transform.position + (Vector3)offset;
     }
-
-    private void OnDrawGizmos()
+    private void LateUpdate()
     {
-        Gizmos.DrawWireSphere(finalPosition, distanceToAttack);
+        previousX = (playerScript.transform.position - transform.position).normalized.x;
     }
 }
