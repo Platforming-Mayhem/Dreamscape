@@ -484,6 +484,7 @@
 {
 	prefab_Type:NPC 
 	parent:Boxes
+	text:hi there boys
 	position: (-14.52227,-2.609958 )
 	rotation: (0,0 ,0 )
 	scale: (1,1 ,1 )
@@ -491,6 +492,7 @@
 {
 	prefab_Type:NPC 
 	parent:Boxes
+	text:yellow my friends :)
 	position: (35.30224,-2.591602 )
 	rotation: (0,0 ,0 )
 	scale: (1,1 ,1 )

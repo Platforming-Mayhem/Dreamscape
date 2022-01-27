@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4742981610525117219}
   - component: {fileID: 1476933935142635321}
   - component: {fileID: 3881167381762338479}
+  - component: {fileID: -2781955182606755551}
   m_Layer: 2
   m_Name: Initial
   m_TagString: Spawnpoint
@@ -110,3 +111,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.8500001}
   m_EdgeRadius: 0
+--- !u!114 &-2781955182606755551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742981610525117218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718748ed7cf953446ae3910e9157d1c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activatedColour: {r: 1, g: 0.9333334, b: 0, a: 1}
+  deactivatedColour: {r: 0.7075472, g: 0.6726148, b: 0.18356179, a: 1}
