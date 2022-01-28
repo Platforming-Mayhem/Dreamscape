@@ -8,22 +8,30 @@ public class EnemyScript : MonoBehaviour
     private enum EnemyType { Ranged, CloseCombat};
     [SerializeField] private EnemyType enemyType;
     [SerializeField] private float radius = 0.1f;
+    [SerializeField] private float range = 1.0f;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private LayerMask playerMask;
 
     [Header("Animation")]
     [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
 
     private float accelerationTime = 0.0f;
+
     private bool accelerate;
     private bool decelerate;
     private bool isGrounded;
     private bool previousGrounded;
+    private bool seePlayer;
     private bool L;
     private bool R;
+
     private SpriteRenderer sprite;
     private PlayerScript playerScript;
     private Rigidbody2D rb;
+    private Animator anim;
+
+    public Vector2 lockPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +39,12 @@ public class EnemyScript : MonoBehaviour
         playerScript = FindObjectOfType<PlayerScript>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         accelerationEnd = accelerationAndDecelerationCurve.keys[1].time;
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
         Vector2 direction = (playerScript.transform.position - transform.position);
+        lockPoint = transform.position;
     }
 
     private void RangedEnemy()
@@ -117,13 +127,13 @@ public class EnemyScript : MonoBehaviour
         {
             xTime += Time.deltaTime;
             xTime = Mathf.Clamp(xTime, 0f, accelerationEnd);
-            //anim.SetBool("Walking", true);
+            anim.SetBool("Walking", true);
         }
         else if (decelerate)
         {
             xTime += Time.deltaTime;
             xTime = Mathf.Clamp(xTime, accelerationEnd, decelerationEnd);
-            //anim.SetBool("Walking", false);
+            anim.SetBool("Walking", false);
         }
         xVelocity = accelerationAndDecelerationCurve.Evaluate(xTime) * direction;
         if (hurt)
@@ -133,9 +143,28 @@ public class EnemyScript : MonoBehaviour
         rb.velocity = new Vector2(xVelocity, rb.velocity.y);
     }
 
+    private bool followPlayer = false;
+
     private void CloseCombatEnemy()
     {
-        
+        if (seePlayer)
+        {
+            followPlayer = true;
+        }
+        if (followPlayer)
+        {
+            RaycastHit2D a = Physics2D.Raycast(transform.position, playerScript.transform.position - transform.position, (playerScript.transform.position - transform.position).magnitude, groundMask);
+            if (!a)
+            {
+                lockPoint = (playerScript.transform.position - transform.position).normalized;
+            }
+            else
+            {
+                lockPoint = Vector2.zero;
+                followPlayer = false;
+            }
+        }
+        AccelerateAndDecelerate(lockPoint.x);
     }
 
     private bool jump;
@@ -146,9 +175,18 @@ public class EnemyScript : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
-        L = Physics2D.Raycast(groundChecker.transform.position, (Vector2.down + Vector2.left) * 0.5f, 1.0f, groundMask);
-        R = Physics2D.Raycast(groundChecker.transform.position, (Vector2.down + Vector2.right) * 0.5f, 1.0f, groundMask);
-        if (jump && isGrounded)
+        L = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.left, 1.0f, groundMask);
+        R = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.right, 1.0f, groundMask);
+        seePlayer = Physics2D.OverlapCircle(transform.position, range, playerMask);
+        if (!L || !R)
+        {
+            jump = true;
+        }
+        else if (L && R)
+        {
+            jump = false;
+        }
+        if (jump && (isGrounded || (L && R)))
         {
             isJumping = true;
             yTime = 0.0f;
@@ -180,20 +218,12 @@ public class EnemyScript : MonoBehaviour
         else if(enemyType == EnemyType.CloseCombat)
         {
             CloseCombatEnemy();
-            if(L && R)
-            {
-                AccelerateAndDecelerate((playerScript.transform.position - transform.position).x);
-            }
-            else
-            {
-                rb.velocity = Vector2.zero;
-            }
         }
         ChangeDirection();
     }
     private void LateUpdate()
     {
-        previousX = (playerScript.transform.position - transform.position).x;
+        previousX = lockPoint.x;
         previousGrounded = isGrounded;
     }
 
@@ -201,7 +231,7 @@ public class EnemyScript : MonoBehaviour
     {
         Gizmos.DrawWireSphere(groundChecker.position, radius);
         Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
-        Gizmos.DrawRay(groundChecker.transform.position, (Vector2.down + Vector2.left) * 0.5f);
-        Gizmos.DrawRay(groundChecker.transform.position, (Vector2.down + Vector2.right) * 0.5f);
+        Gizmos.DrawRay(groundChecker.position, playerScript.transform.position - groundChecker.position);
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }
