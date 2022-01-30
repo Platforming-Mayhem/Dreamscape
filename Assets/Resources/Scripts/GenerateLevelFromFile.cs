@@ -46,7 +46,14 @@ public class GenerateLevelFromFile : MonoBehaviour
     public void Stop()
     {
         Time.timeScale = 0.0f;
-        player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        try
+        {
+            player.spawnpoint = GameObject.FindGameObjectWithTag("Initial").transform;
+        }
+        catch
+        {
+            player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        }
         player.Respawn();
     }
 
@@ -128,7 +135,14 @@ public class GenerateLevelFromFile : MonoBehaviour
                     break;
             }
         }
-        player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        try
+        {
+            player.spawnpoint = GameObject.FindGameObjectWithTag("Initial").transform;
+        }
+        catch
+        {
+            player.spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        }
         player.Respawn();
     }
 
@@ -169,8 +183,17 @@ public class GenerateLevelFromFile : MonoBehaviour
             contents +=
         "{" + '\n' +
         '\t' + $"prefab_Type:{temp[i].name} " + '\n' +
-        '\t' + $"parent:{temp[i].transform.parent.name}" + '\n' +
-        '\t' + $"text:{temp[i].GetComponentInChildren<NPCDialogue>().text}" + '\n' +
+        '\t' + $"parent:{temp[i].transform.parent.name}" + '\n';
+            try
+            {
+                contents +=
+        '\t' + $"text:{temp[i].GetComponentInChildren<NPCDialogue>().text}" + '\n';
+            }
+            catch
+            {
+
+            }
+            contents +=
         '\t' + $"position: ({temp[i].transform.position.x},{temp[i].transform.position.y} )" + '\n' +
         '\t' + $"rotation: ({temp[i].transform.eulerAngles.x},{temp[i].transform.eulerAngles.y} ,{temp[i].transform.eulerAngles.z} )" + '\n' +
         '\t' + $"scale: ({temp[i].transform.localScale.x},{temp[i].transform.localScale.y} ,{temp[i].transform.localScale.z} )" + '\n' +

@@ -8,7 +8,8 @@ public class EnemyScript : MonoBehaviour
     private enum EnemyType { Ranged, CloseCombat};
     [SerializeField] private EnemyType enemyType;
     [SerializeField] private float radius = 0.1f;
-    [SerializeField] private float range = 1.0f;
+    [SerializeField] private float moveRange = 1.0f;
+    [SerializeField] private float attackRange = 1.0f;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private LayerMask playerMask;
@@ -18,8 +19,10 @@ public class EnemyScript : MonoBehaviour
 
     private float accelerationTime = 0.0f;
 
-    private bool accelerate;
-    private bool decelerate;
+    private bool attack;
+    private bool previousAttack;
+    public bool accelerate;
+    public bool decelerate;
     private bool isGrounded;
     private bool previousGrounded;
     private bool seePlayer;
@@ -44,12 +47,21 @@ public class EnemyScript : MonoBehaviour
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
         Vector2 direction = (playerScript.transform.position - transform.position);
-        lockPoint = transform.position;
+        lockPoint = Vector2.zero;
     }
 
     private void RangedEnemy()
     {
 
+    }
+
+    private void Attack(int hurtAmount)
+    {
+        if(Physics2D.OverlapCircle(transform.position, attackRange, playerMask))
+        {
+            playerScript.SetHeight(playerScript.GetMaxHeight());
+            playerScript.HurtPlayer(hurtAmount, transform.position);
+        }
     }
 
     private float curveEquation(float maxHeight, float timeInterval)
@@ -154,15 +166,21 @@ public class EnemyScript : MonoBehaviour
         if (followPlayer)
         {
             RaycastHit2D a = Physics2D.Raycast(transform.position, playerScript.transform.position - transform.position, (playerScript.transform.position - transform.position).magnitude, groundMask);
-            if (!a)
+            if (!a && playerScript.gameObject.activeInHierarchy)
             {
                 lockPoint = (playerScript.transform.position - transform.position).normalized;
             }
-            else
+            else if(a || !playerScript.gameObject.activeInHierarchy)
             {
                 lockPoint = Vector2.zero;
                 followPlayer = false;
             }
+        }
+        if (attack && anim.GetCurrentAnimatorClipInfo(0)[0].clip.name != "BloodBoneAttack")
+        {
+            lockPoint = Vector2.zero;
+            followPlayer = false;
+            anim.SetTrigger("Attack");
         }
         AccelerateAndDecelerate(lockPoint.x);
     }
@@ -170,15 +188,16 @@ public class EnemyScript : MonoBehaviour
     private bool jump;
     private bool isJumping;
     private float yTime = 0.0f;
-    private float height = 1.6f;
+    [SerializeField] private float height = 1.6f;
 
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
         L = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.left, 1.0f, groundMask);
         R = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.right, 1.0f, groundMask);
-        seePlayer = Physics2D.OverlapCircle(transform.position, range, playerMask);
-        if (!L || !R)
+        seePlayer = Physics2D.OverlapCircle(transform.position, moveRange, playerMask);
+        attack = Physics2D.OverlapCircle(transform.position, attackRange, playerMask);
+        if (!L && R || !R && L)
         {
             jump = true;
         }
@@ -186,7 +205,11 @@ public class EnemyScript : MonoBehaviour
         {
             jump = false;
         }
-        if (jump && (isGrounded || (L && R)))
+        if (isGrounded && previousGrounded && !jump)
+        {
+            isJumping = false;
+        }
+        if (jump && isGrounded)
         {
             isJumping = true;
             yTime = 0.0f;
@@ -196,14 +219,15 @@ public class EnemyScript : MonoBehaviour
         {
             yTime = 0.0f;
         }
-        if (!isGrounded && !isJumping)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, curveEquation(0.0f, yTime));
-            yTime += Time.fixedDeltaTime * 9.8f;
-        }
-        if(isJumping)
+        if (isJumping)
         {
             rb.velocity = new Vector2(rb.velocity.x, curveEquation(height, yTime));
+            yTime += Time.fixedDeltaTime * 9.8f;
+        }
+        else if (!isGrounded && !isJumping)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, curveEquation(0.0f, yTime));
+            Debug.Log("FALL");
             yTime += Time.fixedDeltaTime * 9.8f;
         }
     }
@@ -225,13 +249,15 @@ public class EnemyScript : MonoBehaviour
     {
         previousX = lockPoint.x;
         previousGrounded = isGrounded;
+        previousAttack = attack;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundChecker.position, radius);
         Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
-        Gizmos.DrawRay(groundChecker.position, playerScript.transform.position - groundChecker.position);
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawRay(transform.position, playerScript.transform.position - transform.position);
+        Gizmos.DrawWireSphere(transform.position, moveRange);
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

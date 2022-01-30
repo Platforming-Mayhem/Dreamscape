@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2781955182606755551}
   m_Layer: 2
   m_Name: Initial
-  m_TagString: Spawnpoint
+  m_TagString: Initial
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

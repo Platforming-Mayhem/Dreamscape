@@ -54,7 +54,7 @@ public class PlayerScript : MonoBehaviour
     //Curve Equation
     private float curveEquation(float maxHeight, float timeInterval)
     {
-        float newHeight = ((-Mathf.Pow(((timeInterval - maxHeight)), 2.0f) + Mathf.Pow(maxHeight, 2.0f)) * Mathf.Pow(-timeInterval + 2.0f * maxHeight, 2.0f))/1.688f;
+        float newHeight = (-Mathf.Pow(timeInterval - maxHeight, 2.0f) + Mathf.Pow(maxHeight, 2.0f)) * Mathf.Pow(timeInterval - (2.0f * maxHeight), 2.0f);
         return newHeight;
     }
 
@@ -85,7 +85,14 @@ public class PlayerScript : MonoBehaviour
         direction = 0.0f;
         hurtDirection = Vector2.zero;
         rb.velocity = Vector2.zero;
-        spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        try
+        {
+            spawnpoint = GameObject.FindGameObjectWithTag("Initial").transform;
+        }
+        catch
+        {
+            spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+        }
         transform.position = spawnpoint.position;
         gameObject.SetActive(true);
         DeathScreen.SetTrigger("close");
