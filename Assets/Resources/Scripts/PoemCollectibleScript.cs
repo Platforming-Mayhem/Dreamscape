@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PoemCollectibleScript : MonoBehaviour
 {
-    [SerializeField]private string poemData = "";
+    public string poemData = "";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class PoemCollectibleScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log(poemData);
+            
         }
     }
 }
