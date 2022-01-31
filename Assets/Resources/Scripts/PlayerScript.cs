@@ -54,7 +54,7 @@ public class PlayerScript : MonoBehaviour
     //Curve Equation
     private float curveEquation(float maxHeight, float timeInterval)
     {
-        float newHeight = (-Mathf.Pow(timeInterval - maxHeight, 2.0f) + Mathf.Pow(maxHeight, 2.0f)) * Mathf.Pow(timeInterval - (2.0f * maxHeight), 2.0f);
+        float newHeight = -Mathf.Pow(timeInterval - maxHeight, 2.0f) + Mathf.Pow(maxHeight, 2f);
         return newHeight;
     }
 
