@@ -55,8 +55,16 @@ public class PlayerScript : MonoBehaviour
     //Curve Equation
     private float curveEquation(float maxHeight, float timeInterval)
     {
-        float newHeight = -Mathf.Pow(timeInterval - maxHeight, 2.0f) + Mathf.Pow(maxHeight, 2f);
-        return newHeight;
+        float newHeight = ((-Mathf.Pow(timeInterval - maxHeight, 2.0f) + Mathf.Pow(maxHeight, 2f)) * (timeInterval + maxHeight)) * (Mathf.Pow(timeInterval - (maxHeight * 2.0f), 2.0f));
+        float newNewHeight = -Mathf.Pow(timeInterval - (maxHeight * 2.0f), 2.0f) * 2.0f;
+        if (newHeight <= 0.0f)
+        {
+            return newNewHeight;
+        }
+        else
+        {
+            return newHeight;
+        }
     }
 
     public void Jump()
@@ -107,9 +115,16 @@ public class PlayerScript : MonoBehaviour
 
     private bool isJumping;
 
+    private bool bounced = false;
+
     private float yTime = 0f;
 
     private float previousX = 0f;
+
+    public void SetBounced(bool tf)
+    {
+        bounced = tf;
+    }
 
     private void FixedUpdate()
     {
@@ -118,7 +133,7 @@ public class PlayerScript : MonoBehaviour
         {
             coyoteTimer = (float)(9.0f/60.0f);
         }
-        if (isGrounded && isJumping)
+        if ((isGrounded && isJumping) || bounced && jumpStack)
         {
             yTime = 0f;
         }
@@ -156,13 +171,8 @@ public class PlayerScript : MonoBehaviour
                 jumpStack = true;
                 jumpTimer = .5f;
             }
-
-            if (isGrounded || coyoteTimer > 0.0f)
-            {
-                SetHeight(Mathf.Clamp(height + (Time.deltaTime * 0.9f) * gravityScale * 9.8f, 0.0f, maxHeight));
-            }
+            SetHeight(Mathf.Clamp(height + (Time.deltaTime * 0.9f) * gravityScale * 9.8f, 0.0f, maxHeight));
         }
-
         if (jumpStack)
         {
             if (jumpTimer > 0.0f)
@@ -173,7 +183,7 @@ public class PlayerScript : MonoBehaviour
             {
                 jumpStack = false;
             }
-            if (!isJumping)
+            if (!isJumping || bounced)
             {
                 anim.SetTrigger("Jump");
                 jumpStack = false;
