@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
 
     [Header("Animation")]
     [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
+    [SerializeField] private float animationSpeed = 0.25f;
     private Animator anim;
 
     private bool isGrounded;
@@ -294,11 +295,11 @@ public class PlayerScript : MonoBehaviour
             transform.up = Vector3.Lerp(transform.up, Vector3.up, Time.deltaTime * 20.0f);
         }
         ChangeDirection();
+        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x * animationSpeed));
     }
 
     private void LateUpdate()
     {
-        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x / 3f));
         previousX = Input.GetAxis("Horizontal");
         previousGrounded = isGrounded;
     }

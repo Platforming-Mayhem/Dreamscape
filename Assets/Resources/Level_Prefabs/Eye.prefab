@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.67
   clampRange:
-    m_Center: {x: -5.92577, y: -0.17106149, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.81, y: 0.53, z: 0}
 --- !u!1 &4162456865875575759
 GameObject:
