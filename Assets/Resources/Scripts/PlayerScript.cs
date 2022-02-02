@@ -148,12 +148,12 @@ public class PlayerScript : MonoBehaviour
         if (isGrounded && !previousGrounded)
         {
             isJumping = false;
-            anim.SetTrigger("Land");
             if(coyoteTimer <= 0.0f)
             {
                 SetHeight(0.0f);
             }
             hurt = false;
+            anim.SetTrigger("Land");
         }
         if (isJumping)
         {
@@ -169,7 +169,7 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 jumpStack = true;
-                jumpTimer = .5f;
+                jumpTimer = 0.5f;
             }
             SetHeight(Mathf.Clamp(height + (Time.deltaTime * 0.9f) * gravityScale * 9.8f, 0.0f, maxHeight));
         }
