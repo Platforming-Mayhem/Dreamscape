@@ -15,7 +15,6 @@ public class RaRaScript : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
 
-    private float accelerationTime = 0.0f;
     private bool isGrounded;
     private bool previousGrounded;
     private bool seePlayer;

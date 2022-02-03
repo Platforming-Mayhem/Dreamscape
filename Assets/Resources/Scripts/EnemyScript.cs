@@ -17,8 +17,6 @@ public class EnemyScript : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private AnimationCurve accelerationAndDecelerationCurve;
 
-    private float accelerationTime = 0.0f;
-
     private bool attack;
     private bool previousAttack;
     public bool accelerate;

@@ -23,8 +23,6 @@ public class CollectibleManagerScript : MonoBehaviour
         text.text = data;
     }
 
-    float previousX = 0.0f;
-
     void AssignPoemLine()
     {
         PoemCollectibleScript[] poems = Resources.FindObjectsOfTypeAll<PoemCollectibleScript>();
