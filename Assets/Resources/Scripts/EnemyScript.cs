@@ -227,7 +227,6 @@ public class EnemyScript : MonoBehaviour
         else if (!isGrounded && !isJumping)
         {
             rb.velocity = new Vector2(rb.velocity.x, curveEquation(0.0f, yTime));
-            Debug.Log("FALL");
             yTime += Time.fixedDeltaTime * 9.8f;
         }
     }

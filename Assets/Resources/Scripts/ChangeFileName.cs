@@ -29,4 +29,9 @@ public class ChangeFileName : MonoBehaviour
         text.text = StandaloneFileBrowser.SaveFilePanel("Save", "", "Level", "txt");
         g.SaveLevelToFile();
     }
+
+    private void OnApplicationQuit()
+    {
+        SaveFile();
+    }
 }
