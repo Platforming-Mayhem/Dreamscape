@@ -5,42 +5,35 @@ using UnityEngine;
 public class TurretScript : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
-    int numberOfBullets = 3;
-    float coolDown = 1.5f;
+    [SerializeField] int numberOfBullets = 3;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(coolDown > 0.0f)
+        if (numberOfBullets > 0)
         {
-            if(numberOfBullets > 0)
-            {
-                coolDown -= Time.deltaTime;
-            }
-            else
-            {
-                coolDown = 4.0f;
-                numberOfBullets = 3;
-            }
+            anim.SetTrigger("Shoot");
+            numberOfBullets -= 1;
         }
         else
         {
-            Instantiate(bullet, transform.position + transform.right, Quaternion.identity).transform.right = transform.right;
-            if(numberOfBullets > 0)
-            {
-                coolDown = 1.5f;
-                numberOfBullets -= 1;
-            }
-            else
-            {
-                coolDown = 4.0f;
-                numberOfBullets = 3;
-            }
+            anim.SetTrigger("Reload");
         }
+    }
+
+    public void Shoot()
+    {
+        Instantiate(bullet, transform.position + transform.right, Quaternion.identity).transform.right = transform.right;
+    }
+
+    public void Reload()
+    {
+        numberOfBullets = 3;
     }
 }

@@ -29,6 +29,7 @@ public class PlayerScript : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private RaRaScript raRa;
 
     // Start is called before the first frame update
     private void Start()
@@ -36,6 +37,7 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
+        raRa = FindObjectOfType<RaRaScript>();
         accelerationEnd = accelerationAndDecelerationCurve.keys[1].time;
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
@@ -295,6 +297,17 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Death();
+        }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (raRa.activate)
+            {
+                raRa.activate = false;
+            }
+            else
+            {
+                raRa.activate = true;
+            }
         }
         if(isGrounded || previousGrounded)
         {

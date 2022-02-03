@@ -10,6 +10,10 @@ public class RaRaScript : MonoBehaviour
 
     PlayerScript player;
 
+    [SerializeField] private float radius = 0.1f;
+    [SerializeField] private Transform groundChecker;
+    [SerializeField] private LayerMask groundMask;
+
     private bool accelerate;
     private bool decelerate;
     [Header("Animation")]
@@ -18,8 +22,6 @@ public class RaRaScript : MonoBehaviour
     private bool isGrounded;
     private bool previousGrounded;
     private bool seePlayer;
-    private bool L;
-    private bool R;
 
     private SpriteRenderer sprite;
     private PlayerScript playerScript;
@@ -142,17 +144,71 @@ public class RaRaScript : MonoBehaviour
         rb.velocity = new Vector2(xVelocity, rb.velocity.y);
     }
 
+    [SerializeField] private bool jump;
+    private bool isJumping;
+    private float yTime = 0.0f;
+    [SerializeField] private float height = 1.6f;
+
+    private void FixedUpdate()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
+        bool LD = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.left, 1.0f, groundMask);
+        bool RD = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.right, 1.0f, groundMask);
+        bool L = Physics2D.Raycast(groundChecker.position, Vector2.left, 1.0f, groundMask);
+        bool R = Physics2D.Raycast(groundChecker.position, Vector2.right, 1.0f, groundMask);
+        if (!LD || !RD)
+        {
+            jump = true;
+        }
+        else if (LD && RD)
+        {
+            jump = false;
+        }
+        if (L || R)
+        {
+            jump = true;
+        }
+        else if (!L && !R)
+        {
+            jump = false;
+        }
+        if (jump && isGrounded)
+        {
+            isJumping = true;
+            yTime = 0.0f;
+            jump = false;
+        }
+        if (!isGrounded && previousGrounded && !isJumping)
+        {
+            yTime = 0.0f;
+        }
+        if (isJumping)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, curveEquation(height, yTime));
+            yTime += Time.fixedDeltaTime * 9.8f;
+        }
+        else if (!isGrounded && !isJumping)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, curveEquation(0.0f, yTime));
+            yTime += Time.fixedDeltaTime * 9.8f;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (isEnabled)
         {
             AccelerateAndDecelerate((playerScript.transform.position - transform.position).normalized.x);
-            Debug.Log((playerScript.transform.position - transform.position).normalized.x);
         }
         if (activate)
         {
             activateRaRa();
+        }
+        else
+        {
+            isEnabled = false;
+            rb.velocity = new Vector2(0.0f, rb.velocity.y);
         }
         ChangeDirection();
     }
@@ -160,5 +216,16 @@ public class RaRaScript : MonoBehaviour
     private void LateUpdate()
     {
         previousX = (playerScript.transform.position - transform.position).normalized.x;
+        previousGrounded = isGrounded;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(groundChecker.position, radius);
+        Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
+        Gizmos.DrawRay(groundChecker.position, Vector2.down + Vector2.left);
+        Gizmos.DrawRay(groundChecker.position, Vector2.down + Vector2.right);
+        Gizmos.DrawRay(groundChecker.position, Vector2.left);
+        Gizmos.DrawRay(groundChecker.position, Vector2.right);
     }
 }
