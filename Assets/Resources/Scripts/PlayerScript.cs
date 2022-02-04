@@ -141,7 +141,7 @@ public class PlayerScript : MonoBehaviour
         }
         else if (previousGrounded && !isGrounded || !isGrounded)
         {
-            if (!isJumping && coyoteTimer <= 0.0f)
+            if (!isJumping && coyoteTimer <= 0.0f && !bounced)
             {
                 yTime = height * 2f;
                 isJumping = true;
@@ -150,7 +150,7 @@ public class PlayerScript : MonoBehaviour
         if (isGrounded && !previousGrounded)
         {
             isJumping = false;
-            if(coyoteTimer <= 0.0f)
+            if(coyoteTimer <= 0.0f || !bounced)
             {
                 SetHeight(0.0f);
             }

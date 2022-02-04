@@ -146,7 +146,7 @@ public class RaRaScript : MonoBehaviour
 
     [SerializeField] private bool jump;
     private bool isJumping;
-    private float yTime = 0.0f;
+    [SerializeField] private float yTime = 0.0f;
     [SerializeField] private float height = 1.6f;
 
     private void FixedUpdate()
@@ -154,29 +154,21 @@ public class RaRaScript : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundChecker.transform.position, radius, groundMask);
         bool LD = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.left, 1.0f, groundMask);
         bool RD = Physics2D.Raycast(groundChecker.position, Vector2.down + Vector2.right, 1.0f, groundMask);
-        bool L = Physics2D.Raycast(groundChecker.position, Vector2.left, 1.0f, groundMask);
-        bool R = Physics2D.Raycast(groundChecker.position, Vector2.right, 1.0f, groundMask);
-        if (!LD || !RD)
+        bool L = Physics2D.Raycast(transform.position + Vector3.up / 2.0f, Vector2.left, 1.0f, groundMask);
+        bool R = Physics2D.Raycast(transform.position + Vector3.up / 2.0f, Vector2.right, 1.0f, groundMask);
+        if (LD && !RD && !L && !R || RD && !LD && !L && !R || L && !R && LD && RD && !isJumping || R && !L && LD && RD && !isJumping)
         {
             jump = true;
-        }
-        else if (LD && RD)
-        {
-            jump = false;
-        }
-        if (L || R)
-        {
-            jump = true;
-        }
-        else if (!L && !R)
-        {
-            jump = false;
         }
         if (jump && isGrounded)
         {
             isJumping = true;
             yTime = 0.0f;
             jump = false;
+        }
+        if (isGrounded && !previousGrounded)
+        {
+            isJumping = false;
         }
         if (!isGrounded && previousGrounded && !isJumping)
         {
@@ -225,7 +217,7 @@ public class RaRaScript : MonoBehaviour
         Gizmos.DrawRay(groundChecker.transform.position, Vector2.down * radius);
         Gizmos.DrawRay(groundChecker.position, Vector2.down + Vector2.left);
         Gizmos.DrawRay(groundChecker.position, Vector2.down + Vector2.right);
-        Gizmos.DrawRay(groundChecker.position, Vector2.left);
-        Gizmos.DrawRay(groundChecker.position, Vector2.right);
+        Gizmos.DrawRay(transform.position + Vector3.up / 2.0f, Vector2.left);
+        Gizmos.DrawRay(transform.position + Vector3.up / 2.0f, Vector2.right);
     }
 }
