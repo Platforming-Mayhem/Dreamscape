@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3396779935645782856}
   - component: {fileID: 3396779935645782858}
   - component: {fileID: 3396779935645782859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
