@@ -34,12 +34,12 @@ public class NPCDialogue : MonoBehaviour
             if (Input.GetButton("Submit"))
             {
                 tmpText.text += a;
-                yield return new WaitForSeconds(0.01f);
+                yield return new WaitForSeconds(0.0001f);
             }
             else
             {
                 tmpText.text += a;
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.005f);
             }
             if (tmpText.textInfo.pageCount - previousPageNumber > 0)
             {
