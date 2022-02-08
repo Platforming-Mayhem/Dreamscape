@@ -21,27 +21,9 @@ public class CollectibleManagerScript : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private float timeWait = 0.0f;
-
-    private void Update()
-    {
-        /*if(timeWait > 0.0f)
-        {
-            timeWait -= Time.deltaTime;
-        }
-        else
-        {
-            if (anim.GetAnimatorTransitionInfo(0).IsName("TextIdle"))
-            {
-                anim.SetTrigger("Exit");
-            }
-        }*/
-    }
-
     public void ChangeText(string data)
     {
         text.text = data;
         anim.SetTrigger("Entrance");
-        timeWait = 5.0f;
     }
 }
