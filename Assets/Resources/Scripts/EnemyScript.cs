@@ -28,6 +28,7 @@ public class EnemyScript : MonoBehaviour
     private bool R;
 
     private SpriteRenderer sprite;
+    private Collider2D playerCol;
     private PlayerScript playerScript;
     private Rigidbody2D rb;
     private Animator anim;
@@ -38,6 +39,7 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         playerScript = FindObjectOfType<PlayerScript>();
+        playerCol = playerScript.GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -163,12 +165,12 @@ public class EnemyScript : MonoBehaviour
         }
         if (followPlayer)
         {
-            RaycastHit2D a = Physics2D.Raycast(transform.position, playerScript.transform.position - transform.position, (playerScript.transform.position - transform.position).magnitude, groundMask);
-            if (!a && playerScript.gameObject.activeInHierarchy)
+            RaycastHit2D a = Physics2D.Raycast(transform.position, playerCol.bounds.max - transform.position, (playerCol.bounds.max - transform.position).magnitude, groundMask);
+            if (!a && playerCol.gameObject.activeInHierarchy)
             {
-                lockPoint = (playerScript.transform.position - transform.position).normalized;
+                lockPoint = (playerCol.bounds.max - transform.position).normalized;
             }
-            else if(a || !playerScript.gameObject.activeInHierarchy)
+            else if(a || !playerCol.gameObject.activeInHierarchy)
             {
                 lockPoint = Vector2.zero;
                 followPlayer = false;
