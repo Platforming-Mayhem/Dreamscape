@@ -5,7 +5,7 @@ using UnityEngine;
 public class PoemCollectibleScript : MonoBehaviour
 {
     public string lineData = "";
-    CollectibleManagerScript managerScript;
+    private CollectibleManagerScript managerScript;
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,8 @@ public class PoemCollectibleScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            managerScript.collected++;
+            lineData = managerScript.poemLineByLine[managerScript.collected - 1];
             managerScript.ChangeText(lineData);
             gameObject.SetActive(false);
         }
