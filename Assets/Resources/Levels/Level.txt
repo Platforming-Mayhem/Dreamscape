@@ -1,0 +1,4901 @@
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (541.8347,-54.47047 )
+	rotation: (0,0 ,0 )
+	scale: (5.8,15.8 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (515.3735,-50.43977 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (520.818,-50.82866 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (518.1884,-49.57866 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (-2313.13,-32425.94 )
+	rotation: (0,0 ,138.2895 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (-1339.517,-25119.12 )
+	rotation: (0,0 ,83.34792 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (744.6337,-13288.53 )
+	rotation: (0,0 ,87.27146 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (513.0202,-53.45718 )
+	rotation: (0,0 ,277.0029 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (770.9044,-16788.96 )
+	rotation: (0,0 ,120.1263 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (905.0135,-28909.7 )
+	rotation: (0,0 ,349.733 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (2812.8,-12046.95 )
+	rotation: (0,0 ,337.3752 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (511.5387,-49.23367 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (511.5387,-50.23367 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (511.5387,-51.15033 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (519.1043,-52.75164 )
+	rotation: (0,0 ,0 )
+	scale: (14.25,2.75 ,1 )
+};
+{
+	prefab_Type:Turret 
+	parent:Boxes
+	position: (511.7084,-43.97668 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (447.6683,-43.56787 )
+	rotation: (0,0 ,0 )
+	scale: (-3.95,3.650001 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (506.2089,-44.50365 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (780.9239,-136543.1 )
+	rotation: (0,0 ,341.3949 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (709.1866,-84179.56 )
+	rotation: (0,0 ,266.111 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (391.2702,-50.80497 )
+	rotation: (0,0 ,0.1454501 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (521423.5,-161506.5 )
+	rotation: (0,0 ,336.0684 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (319849.6,-456958.6 )
+	rotation: (0,0 ,38.03323 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (512.9256,-45.07772 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (514.9312,-45.05921 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (520.92,-45.01476 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (518.92,-45.02588 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (516.9312,-45.0481 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (522.8867,-45.01476 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (482.2751,-42.71165 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (510.3964,-43.9786 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (510.3961,-46.67838 )
+	rotation: (0,0 ,0 )
+	scale: (4.099999,4.199999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (506.5819,-45.45567 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (504.3021,-45.35779 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (502.3299,-45.32076 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (498.8854,-46.35779 )
+	rotation: (0,0 ,0 )
+	scale: (3.449999,3.899999 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (439.2085,-1197320 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (493.9577,-45.81188 )
+	rotation: (0,0 ,180 )
+	scale: (2.2,2.799999 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (1381.389,-1028505 )
+	rotation: (0,0 ,42.62621 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (1318.34,-995381.3 )
+	rotation: (0,0 ,263.8003 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (378.1623,-49.52794 )
+	rotation: (0,0 ,90.19942 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (9739.068,-1670012 )
+	rotation: (0,0 ,75.88995 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (381.3764,-50.98237 )
+	rotation: (0,0 ,0.5351908 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (510.1906,-55.1773 )
+	rotation: (0,0 ,0 )
+	scale: (63.35001,7.55 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (490.9916,-46.73728 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (2941.311,-2210281 )
+	rotation: (0,0 ,17.28569 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (492.3965,-2620750 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (439.4311,-39.90916 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (394.532,-40.30109 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (1143.949,-837669.1 )
+	rotation: (0,0 ,335.7855 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (-33156.69,-2466525 )
+	rotation: (0,0 ,9.944863 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (9104.525,-2299102 )
+	rotation: (0,0 ,180.31 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PhysicsSquare 
+	parent:Boxes
+	position: (41369.66,-2467318 )
+	rotation: (0,0 ,46.23185 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (466.744,-45.86943 )
+	rotation: (0,0 ,0 )
+	scale: (47.59999,2.749999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (452.8273,-43.58091 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (452.8273,-43.58091 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (448.9273,-42.11424 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (330.6407,-45.66423 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (329.574,-45.69757 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (328.6407,-45.69757 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (323.4158,-37.36403 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (325.5643,-38.90133 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (322.5495,-37.42133 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (322.3984,-40.47058 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (323.1554,-43.73725 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (325.5717,-42.06762 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (308.7496,-42.22499 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (324.1906,-45.65276 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (306.549,-50.6311 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (326.647,-45.60739 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (324.7199,-45.62332 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (327.6336,-40.73762 )
+	rotation: (0,0 ,0 )
+	scale: (1.05,9.450002 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (325.6914,-45.62332 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (325.9781,-46.41961 )
+	rotation: (0,0 ,0 )
+	scale: (4.6,2.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (323.5088,-37.42133 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (326.6629,-36.41813 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (327.9858,-39.51255 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (323.3317,-40.47058 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (326.5514,-42.07183 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (324.151,-43.73725 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (320.9175,-44.79554 )
+	rotation: (0,0 ,0 )
+	scale: (5.799999,1.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (290.4745,-38.79919 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (320.8398,-43.92135 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (308.4511,-43.84477 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (308.7465,-43.88551 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (309.7446,-43.86514 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (307.3583,-41.4292 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (318.4717,-43.91392 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (318.9146,-43.93039 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (319.8658,-43.93039 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (315.4074,-43.89076 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (313.0891,-43.89076 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (310.7113,-43.87095 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (312.0591,-47.99947 )
+	rotation: (0,0 ,0 )
+	scale: (-17.5,5.300001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (307.4867,-39.27583 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (305.9589,-40.11842 )
+	rotation: (0,0 ,0 )
+	scale: (4.1,7.900001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (295.744,-50.4713 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (282.3745,-36.82082 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (93.2361,3.801728 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (93.2361,3.801728 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (261.4093,-28.07618 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (254.5469,-36.4871 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (266.6501,-33.06737 )
+	rotation: (0,0 ,0 )
+	scale: (1.85,6.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (284.8179,-37.33571 )
+	rotation: (0,0 ,0 )
+	scale: (38.29999,2.349999 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (284.8544,-41.93238 )
+	rotation: (0,0 ,0 )
+	scale: (-45.6,7.850002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (236.6618,-34.03516 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (284.1274,-28.95029 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (276.7789,-28.93863 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (280.6976,-29.02484 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (235.022,-30.35507 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (259.2772,-29.09382 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (277.0185,-29.26847 )
+	rotation: (0,0 ,0 )
+	scale: (31.59999,1.5 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (244.2041,-23.94752 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (244.7989,-23.94456 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (259.9533,-40.21371 )
+	rotation: (0,0 ,0 )
+	scale: (6.300001,4.299999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (238.6793,-34.4586 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (238.6793,-34.4586 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (238.6793,-34.4586 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (255.6206,-25.99121 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (236.5599,-38.18385 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (256.6806,-26.03014 )
+	rotation: (0,0 ,0 )
+	scale: (3.449999,-0.7500004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (259.67,-193.4354 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (237.5214,-38.16693 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (252.0775,-29.40898 )
+	rotation: (0,0 ,0 )
+	scale: (11.20001,1.549999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (249.8902,-29.5578 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (222.1885,-29.81748 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (222.9509,-29.77026 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (219.3865,-22.53094 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (235.8332,-30.36618 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (250.6936,-25.41964 )
+	rotation: (0,0 ,0 )
+	scale: (8.850002,1.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (246.0272,-33.49315 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (249.0559,-29.5726 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (248.1578,-29.5726 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (244.38,-31.77631 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (247.0129,-33.39899 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (255.0209,-34.98109 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (252.603,-36.50673 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (253.5809,-36.49609 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (249.9799,-33.51791 )
+	rotation: (0,0 ,0 )
+	scale: (6.000001,1.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (247.3405,-37.20299 )
+	rotation: (0,0 ,0 )
+	scale: (6.2,0.8000003 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (237.9755,-40.08733 )
+	rotation: (0,0 ,0 )
+	scale: (38.65,3.999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (239.6349,-39.30305 )
+	rotation: (0,0 ,0 )
+	scale: (2.15,3.599998 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (235.4022,-37.60451 )
+	rotation: (0,0 ,0 )
+	scale: (1.6,5.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (242.0949,-37.11508 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (243.8625,-37.08084 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (237.6449,-34.04288 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (238.6366,-34.05862 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (230.0198,-25.51277 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (226.6853,-28.81047 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (224.7131,-28.11603 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (152.6459,-1.42924 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.8095,1.084855 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (146.9736,1.094936 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (145.631,-0.7939525 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (165.9155,-12.02924 )
+	rotation: (0,0 ,359.3839 )
+	scale: (24.6,22.40001 ,1 )
+};
+{
+	prefab_Type:Initial 
+	parent:Boxes
+	position: (-18.15518,-2.566767 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (108.6771,4.131873 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.3669,4.146168 )
+	rotation: (0,0 ,217.7389 )
+	scale: (5.2,1.800001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (107.2324,1.453066 )
+	rotation: (0,0 ,135.4223 )
+	scale: (1.8,3.5 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (102.1175,1.586887 )
+	rotation: (0,0 ,168.4166 )
+	scale: (9.649999,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.97806,2.392973 )
+	rotation: (0,0 ,0 )
+	scale: (10.95001,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (78.31858,-11.66708 )
+	rotation: (0,0 ,221.3956 )
+	scale: (6.100004,3.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-52.47192,-21.17702 )
+	rotation: (0,0 ,0 )
+	scale: (56.20001,2.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (53.04687,-22.30821 )
+	rotation: (0,0 ,173.499 )
+	scale: (16.75,2.1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (84.42729,-10.02499 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (122.57,-2.882371 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (43.28713,-2.547251 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (115.86,5.615192 )
+	rotation: (0,0 ,0 )
+	scale: (10.75001,3.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (117.89,-14.16285 )
+	rotation: (0,0 ,0 )
+	scale: (4.550001,24.69998 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (112.24,8.01 )
+	rotation: (0,0 ,127.6476 )
+	scale: (4.650001,-3.320711 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (106.04,-7.98459 )
+	rotation: (0,0 ,0 )
+	scale: (1.85,1.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (111.5932,-15.68988 )
+	rotation: (0,0 ,0 )
+	scale: (11.1,18.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (103.1955,-9.770408 )
+	rotation: (0,0 ,0 )
+	scale: (5.200001,2.950001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.7041,-14.92893 )
+	rotation: (0,0 ,195.0958 )
+	scale: (11.70001,13.00001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.42,-16.01315 )
+	rotation: (0,0 ,0 )
+	scale: (3.350001,9.500002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.51557,-10.83439 )
+	rotation: (0,0 ,0 )
+	scale: (3.149999,2.399999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.51657,-18.5799 )
+	rotation: (0,0 ,0 )
+	scale: (2.55,13.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.76176,-11.26211 )
+	rotation: (0,0 ,201.0707 )
+	scale: (3.499997,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.18041,-22.58561 )
+	rotation: (0,0 ,0 )
+	scale: (42.74995,6.199999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (94.44417,-16.91688 )
+	rotation: (0,0 ,0 )
+	scale: (2.149999,11.15 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (89.51299,-10.92228 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.93342,-12.32131 )
+	rotation: (0,0 ,0 )
+	scale: (4.349999,2.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.59,7.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.149998,7.580303 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (100.41,5.759091 )
+	rotation: (0,0 ,0 )
+	scale: (3.05,2.000001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.18881,4.011318 )
+	rotation: (0,0 ,173.5051 )
+	scale: (3.349998,5.650001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (98.84602,3.405807 )
+	rotation: (0,0 ,179.5138 )
+	scale: (19.59999,3.006375 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (6,-3.045 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.602241 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (21.44,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (49.27718,-12.63657 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.34172 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (14.86,-3.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (56.20728,-12.4634 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.97955 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-2.625,-4.17 )
+	rotation: (0,0 ,0 )
+	scale: (3.321693,4.852125 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (26.5,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (7.14,-0.57 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (30.76491,-18.47547 )
+	rotation: (0,0 ,0 )
+	scale: (211.7002,7.750002 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (-10.25,-2.59 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (9.29,-12.78 )
+	rotation: (0,0 ,0 )
+	scale: (71.72688,19.33022 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (21.34,-1.9 )
+	rotation: (0,0 ,0 )
+	scale: (12.08862,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.15625,-14.72668 )
+	rotation: (0,0 ,173.0488 )
+	scale: (16.4,20.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (73.12212,-15.69028 )
+	rotation: (0,0 ,0 )
+	scale: (9.199993,22.44999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (79.54571,-8.903308 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,4.049997 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (75.21915,0.783149 )
+	rotation: (0,0 ,209.1886 )
+	scale: (8.050001,1.750001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.73104,-4.479065 )
+	rotation: (0,0 ,215.4175 )
+	scale: (2.699999,2.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (70.71252,-3.766102 )
+	rotation: (0,0 ,179.2696 )
+	scale: (3.15,2.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (86.05087,-11.88431 )
+	rotation: (0,0 ,0 )
+	scale: (4.500002,2.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (82.98808,2.473579 )
+	rotation: (0,0 ,179.7037 )
+	scale: (9.550005,2.099999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (83.51692,7.356894 )
+	rotation: (0,0 ,158.3926 )
+	scale: (2.900001,1.75 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (80.6778,7.921323 )
+	rotation: (0,0 ,0 )
+	scale: (3.299999,5.300003 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.80385,4.188407 )
+	rotation: (0,0 ,138.1384 )
+	scale: (2.3,3.999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.02873,4.699419 )
+	rotation: (0,0 ,0 )
+	scale: (1.45,1.6 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (88.77764,6.168453 )
+	rotation: (0,0 ,0 )
+	scale: (2.7,6.850002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.74547,4.571207 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (114.5872,-6.633252 )
+	rotation: (0,0 ,0 )
+	scale: (4.550002,6.85 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.8507,-6.466456 )
+	rotation: (0,0 ,0 )
+	scale: (3.849999,2.4 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (112.3838,-5.143413 )
+	rotation: (0,0 ,0 )
+	scale: (2.1,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (118.2111,-7.885433 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (118.7019,-13.12655 )
+	rotation: (0,0 ,207.8637 )
+	scale: (3.299999,1.600001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (120.3043,-14.95179 )
+	rotation: (0,0 ,0 )
+	scale: (10.00001,22.14999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.78,7.841715 )
+	rotation: (0,0 ,0 )
+	scale: (1.75,1.800001 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (74.56772,1.801111 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.3686,6.095974 )
+	rotation: (0,0 ,212.2454 )
+	scale: (1.75,0.9999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.96066,4.221663 )
+	rotation: (0,0 ,264.315 )
+	scale: (3.549998,1.55 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (108.0913,8.928963 )
+	rotation: (0,0 ,0 )
+	scale: (2.449999,1.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (97.73393,4.631862 )
+	rotation: (0,0 ,220.4224 )
+	scale: (2.799999,2.099999 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Just give up, you will never leave man
+	position: (-14.52227,-2.609958 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Darkness has consumed my soul, i will never leave it, i tried to but this is who i am
+	position: (35.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your hair so scruffy
+	position: (39.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why you never smile, your such a freak
+	position: (46.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Hey loser, why are you crying?
+	position: (56.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: HA HA HA HA
+	position: (62.85073,-3.104799 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your clothes like that
+	position: (76.79818,3.304271 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: You will die alone, you deserve nobody
+	position: (98.89632,-9.139252 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (71.56438,-2.67351 )
+	rotation: (0,0 ,167.7585 )
+	scale: (1.5,4.449999 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (73.95847,-4.219104 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (141.705,-3.858768 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (137.8292,-3.810984E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text:Hey soul sister, hey the mister mister on the radio stereo. Habla habla cus cus! I like lamb curry, it tastes good. It's my favourite dish. YAY!
+	position: (125.3428,-12.52505 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (129.4324,-3.808339E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (128.3663,-16.36267 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.3499,-9.730635 )
+	rotation: (0,0 ,0 )
+	scale: (6.55,-24.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (133.8212,-15.45091 )
+	rotation: (0,0 ,0 )
+	scale: (12.75002,22.35001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (143.7374,-2.437998 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (144.273,-14.09831 )
+	rotation: (0,0 ,180 )
+	scale: (9.350011,18.55001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (154.8168,-0.3491212 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (155.8431,-0.3189369 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (159.8276,-0.3793075 )
+	rotation: (0,0 ,0 )
+	scale: (11.90001,1.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (173.2692,-0.4486759 )
+	rotation: (0,0 ,0 )
+	scale: (9.850005,1.249999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9768,-8.357831 )
+	rotation: (0,0 ,0 )
+	scale: (1.699999,17.05 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9857,-19.56155 )
+	rotation: (0,0 ,0 )
+	scale: (1.649999,5.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (181.9643,-21.90642 )
+	rotation: (0,0 ,0 )
+	scale: (4.5,0.8999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (185.2539,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (187.828,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (194.8489,-23.73743 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (190.4021,-21.80304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (167.1324,-1.828196 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (184.1558,-26.66091 )
+	rotation: (0,0 ,0 )
+	scale: (35.64998,7.000004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (195.9161,-27.25299 )
+	rotation: (0,0 ,0 )
+	scale: (8.800003,3.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (202.1928,-27.71184 )
+	rotation: (0,0 ,0 )
+	scale: (1.55,5.8 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (207.99,-34.20158 )
+	rotation: (0,0 ,0 )
+	scale: (56.34999,8.600004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (211.5752,-29.92176 )
+	rotation: (0,0 ,0 )
+	scale: (3.9,1.7 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (216.749,-31.31285 )
+	rotation: (0,0 ,0 )
+	scale: (1.9,3.799999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (216.0401,-27.71398 )
+	rotation: (0,0 ,0 )
+	scale: (4.400003,3.500001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (215.9528,-26.23121 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (220.6338,-26.63824 )
+	rotation: (0,0 ,0 )
+	scale: (5,1.35 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (220.9298,-30.01304 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,0.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (223.7751,-29.7588 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (200.2819,-29.7201 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (231.9516,-29.05022 )
+	rotation: (0,0 ,0 )
+	scale: (5.849999,5.350003 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (221.3745,-51.2594 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (204.4628,-29.96104 )
+	rotation: (0,0 ,0 )
+	scale: (2.45,0.95 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (161.6937,1.311782 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (196.339,-20.8577 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (152.6459,-1.42924 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.8095,1.084855 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (146.9736,1.094936 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (145.631,-0.7939525 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (165.9155,-12.02924 )
+	rotation: (0,0 ,359.3839 )
+	scale: (24.6,22.40001 ,1 )
+};
+{
+	prefab_Type:Initial 
+	parent:Boxes
+	position: (-18.15518,-2.566767 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (108.6771,4.131873 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.3669,4.146168 )
+	rotation: (0,0 ,217.7389 )
+	scale: (5.2,1.800001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (107.2324,1.453066 )
+	rotation: (0,0 ,135.4223 )
+	scale: (1.8,3.5 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (102.1175,1.586887 )
+	rotation: (0,0 ,168.4166 )
+	scale: (9.649999,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.97806,2.392973 )
+	rotation: (0,0 ,0 )
+	scale: (10.95001,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (78.31858,-11.66708 )
+	rotation: (0,0 ,221.3956 )
+	scale: (6.100004,3.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-52.47192,-21.17702 )
+	rotation: (0,0 ,0 )
+	scale: (56.20001,2.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (53.04687,-22.30821 )
+	rotation: (0,0 ,173.499 )
+	scale: (16.75,2.1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (84.42729,-10.02499 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (122.57,-2.882371 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (43.28713,-2.547251 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (115.86,5.615192 )
+	rotation: (0,0 ,0 )
+	scale: (10.75001,3.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (117.89,-14.16285 )
+	rotation: (0,0 ,0 )
+	scale: (4.550001,24.69998 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (112.24,8.01 )
+	rotation: (0,0 ,127.6476 )
+	scale: (4.650001,-3.320711 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (106.04,-7.98459 )
+	rotation: (0,0 ,0 )
+	scale: (1.85,1.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (111.5932,-15.68988 )
+	rotation: (0,0 ,0 )
+	scale: (11.1,18.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (103.1955,-9.770408 )
+	rotation: (0,0 ,0 )
+	scale: (5.200001,2.950001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.7041,-14.92893 )
+	rotation: (0,0 ,195.0958 )
+	scale: (11.70001,13.00001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.42,-16.01315 )
+	rotation: (0,0 ,0 )
+	scale: (3.350001,9.500002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.51557,-10.83439 )
+	rotation: (0,0 ,0 )
+	scale: (3.149999,2.399999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.51657,-18.5799 )
+	rotation: (0,0 ,0 )
+	scale: (2.55,13.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.76176,-11.26211 )
+	rotation: (0,0 ,201.0707 )
+	scale: (3.499997,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.18041,-22.58561 )
+	rotation: (0,0 ,0 )
+	scale: (42.74995,6.199999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (94.44417,-16.91688 )
+	rotation: (0,0 ,0 )
+	scale: (2.149999,11.15 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (89.51299,-10.92228 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.93342,-12.32131 )
+	rotation: (0,0 ,0 )
+	scale: (4.349999,2.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.59,7.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.149998,7.580303 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (100.41,5.759091 )
+	rotation: (0,0 ,0 )
+	scale: (3.05,2.000001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.18881,4.011318 )
+	rotation: (0,0 ,173.5051 )
+	scale: (3.349998,5.650001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (98.84602,3.405807 )
+	rotation: (0,0 ,179.5138 )
+	scale: (19.59999,3.006375 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (6,-3.045 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.602241 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (21.44,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (49.27718,-12.63657 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.34172 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (14.86,-3.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (56.20728,-12.4634 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.97955 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-2.625,-4.17 )
+	rotation: (0,0 ,0 )
+	scale: (3.321693,4.852125 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (26.5,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (7.14,-0.57 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (30.76491,-18.47547 )
+	rotation: (0,0 ,0 )
+	scale: (211.7002,7.750002 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (-10.25,-2.59 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (9.29,-12.78 )
+	rotation: (0,0 ,0 )
+	scale: (71.72688,19.33022 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (21.34,-1.9 )
+	rotation: (0,0 ,0 )
+	scale: (12.08862,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.15625,-14.72668 )
+	rotation: (0,0 ,173.0488 )
+	scale: (16.4,20.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (73.12212,-15.69028 )
+	rotation: (0,0 ,0 )
+	scale: (9.199993,22.44999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (79.54571,-8.903308 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,4.049997 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (75.21915,0.783149 )
+	rotation: (0,0 ,209.1886 )
+	scale: (8.050001,1.750001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.73104,-4.479065 )
+	rotation: (0,0 ,215.4175 )
+	scale: (2.699999,2.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (70.71252,-3.766102 )
+	rotation: (0,0 ,179.2696 )
+	scale: (3.15,2.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (86.05087,-11.88431 )
+	rotation: (0,0 ,0 )
+	scale: (4.500002,2.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (82.98808,2.473579 )
+	rotation: (0,0 ,179.7037 )
+	scale: (9.550005,2.099999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (83.51692,7.356894 )
+	rotation: (0,0 ,158.3926 )
+	scale: (2.900001,1.75 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.80385,4.188407 )
+	rotation: (0,0 ,138.1384 )
+	scale: (2.3,3.999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.02873,4.699419 )
+	rotation: (0,0 ,0 )
+	scale: (1.45,1.6 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (88.77764,6.168453 )
+	rotation: (0,0 ,0 )
+	scale: (2.7,6.850002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.74547,4.571207 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (114.5872,-6.633252 )
+	rotation: (0,0 ,0 )
+	scale: (4.550002,6.85 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.8507,-6.466456 )
+	rotation: (0,0 ,0 )
+	scale: (3.849999,2.4 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (112.3838,-5.143413 )
+	rotation: (0,0 ,0 )
+	scale: (2.1,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (118.3878,-12.89099 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (119.487,-8.533212 )
+	rotation: (0,0 ,207.8637 )
+	scale: (3.299999,1.600001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (120.3043,-14.95179 )
+	rotation: (0,0 ,0 )
+	scale: (10.00001,22.14999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.78,7.841715 )
+	rotation: (0,0 ,0 )
+	scale: (1.75,1.800001 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (74.56772,1.801111 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.3686,6.095974 )
+	rotation: (0,0 ,212.2454 )
+	scale: (1.75,0.9999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.96066,4.221663 )
+	rotation: (0,0 ,264.315 )
+	scale: (3.549998,1.55 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (108.0913,8.928963 )
+	rotation: (0,0 ,0 )
+	scale: (2.449999,1.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (97.73393,4.631862 )
+	rotation: (0,0 ,220.4224 )
+	scale: (2.799999,2.099999 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Just give up, you will never leave man
+	position: (-14.52227,-2.609958 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Darkness has consumed my soul, i will never leave it, i tried to but this is who i am
+	position: (35.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your hair so scruffy
+	position: (39.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why you never smile, your such a freak
+	position: (46.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Hey loser, why are you crying?
+	position: (56.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: HA HA HA HA
+	position: (62.85073,-3.104799 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your clothes like that
+	position: (76.79818,3.304271 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: You will die alone, you deserve nobody
+	position: (98.89632,-9.139252 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (71.56438,-2.67351 )
+	rotation: (0,0 ,167.7585 )
+	scale: (1.5,4.449999 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (73.95847,-4.219104 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (141.705,-3.858768 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (139.0341,-3.811534E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text:Hey soul sister, hey the mister mister on the radio stereo. Habla habla cus cus! I like lamb curry, it tastes good. It's my favourite dish. YAY!
+	position: (125.3428,-12.52505 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (130.6373,-3.808889E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (128.3663,-16.36267 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.3499,-9.730635 )
+	rotation: (0,0 ,0 )
+	scale: (6.55,-24.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (133.8212,-15.45091 )
+	rotation: (0,0 ,0 )
+	scale: (12.75002,22.35001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (143.7374,-2.437998 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (144.273,-14.09831 )
+	rotation: (0,0 ,180 )
+	scale: (9.350011,18.55001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (154.8168,-0.3491212 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (155.8431,-0.3189369 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (159.8276,-0.3793075 )
+	rotation: (0,0 ,0 )
+	scale: (11.90001,1.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (173.2692,-0.4486759 )
+	rotation: (0,0 ,0 )
+	scale: (9.850005,1.249999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9768,-8.357831 )
+	rotation: (0,0 ,0 )
+	scale: (1.699999,17.05 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9857,-19.56155 )
+	rotation: (0,0 ,0 )
+	scale: (1.649999,5.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (181.9643,-21.90642 )
+	rotation: (0,0 ,0 )
+	scale: (4.5,0.8999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (185.2539,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (187.828,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (192.7187,-21.75156 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (190.4021,-21.80304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (167.1324,-1.828196 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (184.1558,-26.66091 )
+	rotation: (0,0 ,0 )
+	scale: (35.64998,7.000004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (198.5762,-23.57017 )
+	rotation: (0,0 ,0 )
+	scale: (8.800003,3.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (202.1928,-27.71184 )
+	rotation: (0,0 ,0 )
+	scale: (1.55,5.8 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (207.99,-34.20158 )
+	rotation: (0,0 ,0 )
+	scale: (56.34999,8.600004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (211.5752,-29.92176 )
+	rotation: (0,0 ,0 )
+	scale: (3.9,1.7 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (214.2665,-29.83639 )
+	rotation: (0,0 ,0 )
+	scale: (1.9,3.799999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (216.0401,-27.71398 )
+	rotation: (0,0 ,0 )
+	scale: (4.400003,3.500001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (215.9528,-26.23121 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (220.6338,-26.63824 )
+	rotation: (0,0 ,0 )
+	scale: (5,1.35 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (219.9047,-29.83621 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,0.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (223.7751,-29.7588 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (200.2819,-29.7201 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (233.7467,-32.61937 )
+	rotation: (0,0 ,0 )
+	scale: (5.849999,5.350003 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (221.3745,-51.2594 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (204.4628,-29.96104 )
+	rotation: (0,0 ,0 )
+	scale: (2.45,0.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (207.6245,-30.00771 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (161.6937,1.311782 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (196.339,-20.8577 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (152.6459,-1.42924 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.8095,1.084855 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (146.9736,1.094936 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (145.631,-0.7939525 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (165.9155,-12.02924 )
+	rotation: (0,0 ,359.3839 )
+	scale: (24.6,22.40001 ,1 )
+};
+{
+	prefab_Type:Initial 
+	parent:Boxes
+	position: (-18.15518,-2.566767 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (108.6771,4.131873 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.3669,4.146168 )
+	rotation: (0,0 ,217.7389 )
+	scale: (5.2,1.800001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (107.2324,1.453066 )
+	rotation: (0,0 ,135.4223 )
+	scale: (1.8,3.5 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (102.1175,1.586887 )
+	rotation: (0,0 ,168.4166 )
+	scale: (9.649999,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.97806,2.392973 )
+	rotation: (0,0 ,0 )
+	scale: (10.95001,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (78.31858,-11.66708 )
+	rotation: (0,0 ,221.3956 )
+	scale: (6.100004,3.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-52.47192,-21.17702 )
+	rotation: (0,0 ,0 )
+	scale: (56.20001,2.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (53.04687,-22.30821 )
+	rotation: (0,0 ,173.499 )
+	scale: (16.75,2.1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (84.42729,-10.02499 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (122.57,-2.882371 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (43.28713,-2.547251 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (115.86,5.615192 )
+	rotation: (0,0 ,0 )
+	scale: (10.75001,3.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (117.89,-14.16285 )
+	rotation: (0,0 ,0 )
+	scale: (4.550001,24.69998 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (112.24,8.01 )
+	rotation: (0,0 ,127.6476 )
+	scale: (4.650001,-3.320711 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (106.04,-7.98459 )
+	rotation: (0,0 ,0 )
+	scale: (1.85,1.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (111.5932,-15.68988 )
+	rotation: (0,0 ,0 )
+	scale: (11.1,18.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (103.1955,-9.770408 )
+	rotation: (0,0 ,0 )
+	scale: (5.200001,2.950001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.7041,-14.92893 )
+	rotation: (0,0 ,195.0958 )
+	scale: (11.70001,13.00001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.42,-16.01315 )
+	rotation: (0,0 ,0 )
+	scale: (3.350001,9.500002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.51557,-10.83439 )
+	rotation: (0,0 ,0 )
+	scale: (3.149999,2.399999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.51657,-18.5799 )
+	rotation: (0,0 ,0 )
+	scale: (2.55,13.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.76176,-11.26211 )
+	rotation: (0,0 ,201.0707 )
+	scale: (3.499997,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.18041,-22.58561 )
+	rotation: (0,0 ,0 )
+	scale: (42.74995,6.199999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (94.44417,-16.91688 )
+	rotation: (0,0 ,0 )
+	scale: (2.149999,11.15 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (89.51299,-10.92228 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.93342,-12.32131 )
+	rotation: (0,0 ,0 )
+	scale: (4.349999,2.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.59,7.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.149998,7.580303 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (100.41,5.759091 )
+	rotation: (0,0 ,0 )
+	scale: (3.05,2.000001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.18881,4.011318 )
+	rotation: (0,0 ,173.5051 )
+	scale: (3.349998,5.650001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (98.84602,3.405807 )
+	rotation: (0,0 ,179.5138 )
+	scale: (19.59999,3.006375 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (6,-3.045 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.602241 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (21.44,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (49.27718,-12.63657 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.34172 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (14.86,-3.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (56.20728,-12.4634 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.97955 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-2.625,-4.17 )
+	rotation: (0,0 ,0 )
+	scale: (3.321693,4.852125 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (26.5,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (7.14,-0.57 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (30.76491,-18.47547 )
+	rotation: (0,0 ,0 )
+	scale: (211.7002,7.750002 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (-10.25,-2.59 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (9.29,-12.78 )
+	rotation: (0,0 ,0 )
+	scale: (71.72688,19.33022 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (21.34,-1.9 )
+	rotation: (0,0 ,0 )
+	scale: (12.08862,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.15625,-14.72668 )
+	rotation: (0,0 ,173.0488 )
+	scale: (16.4,20.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (73.12212,-15.69028 )
+	rotation: (0,0 ,0 )
+	scale: (9.199993,22.44999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (79.54571,-8.903308 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,4.049997 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (75.21915,0.783149 )
+	rotation: (0,0 ,209.1886 )
+	scale: (8.050001,1.750001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.73104,-4.479065 )
+	rotation: (0,0 ,215.4175 )
+	scale: (2.699999,2.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (70.71252,-3.766102 )
+	rotation: (0,0 ,179.2696 )
+	scale: (3.15,2.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (86.05087,-11.88431 )
+	rotation: (0,0 ,0 )
+	scale: (4.500002,2.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (82.98808,2.473579 )
+	rotation: (0,0 ,179.7037 )
+	scale: (9.550005,2.099999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (83.51692,7.356894 )
+	rotation: (0,0 ,158.3926 )
+	scale: (2.900001,1.75 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.80385,4.188407 )
+	rotation: (0,0 ,138.1384 )
+	scale: (2.3,3.999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.02873,4.699419 )
+	rotation: (0,0 ,0 )
+	scale: (1.45,1.6 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (88.77764,6.168453 )
+	rotation: (0,0 ,0 )
+	scale: (2.7,6.850002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.74547,4.571207 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (114.5872,-6.633252 )
+	rotation: (0,0 ,0 )
+	scale: (4.550002,6.85 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.8507,-6.466456 )
+	rotation: (0,0 ,0 )
+	scale: (3.849999,2.4 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (112.3838,-5.143413 )
+	rotation: (0,0 ,0 )
+	scale: (2.1,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (119.6245,-7.433952 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (119.5656,-6.707655 )
+	rotation: (0,0 ,207.8637 )
+	scale: (3.299999,1.600001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (120.3043,-14.95179 )
+	rotation: (0,0 ,0 )
+	scale: (10.00001,22.14999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.78,7.841715 )
+	rotation: (0,0 ,0 )
+	scale: (1.75,1.800001 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (74.56772,1.801111 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.3686,6.095974 )
+	rotation: (0,0 ,212.2454 )
+	scale: (1.75,0.9999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.96066,4.221663 )
+	rotation: (0,0 ,264.315 )
+	scale: (3.549998,1.55 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (108.0913,8.928963 )
+	rotation: (0,0 ,0 )
+	scale: (2.449999,1.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (97.73393,4.631862 )
+	rotation: (0,0 ,220.4224 )
+	scale: (2.799999,2.099999 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Just give up, you will never leave man
+	position: (-14.52227,-2.609958 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Darkness has consumed my soul, i will never leave it, i tried to but this is who i am
+	position: (35.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your hair so scruffy
+	position: (39.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why you never smile, your such a freak
+	position: (46.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Hey loser, why are you crying?
+	position: (56.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: HA HA HA HA
+	position: (62.85073,-3.104799 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your clothes like that
+	position: (76.79818,3.304271 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: You will die alone, you deserve nobody
+	position: (98.89632,-9.139252 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (71.56438,-2.67351 )
+	rotation: (0,0 ,167.7585 )
+	scale: (1.5,4.449999 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (73.95847,-4.219104 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (141.705,-3.858768 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (137.8292,-3.811534E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text:Hey soul sister, hey the mister mister on the radio stereo. Habla habla cus cus! I like lamb curry, it tastes good. It's my favourite dish. YAY!
+	position: (125.3428,-12.52505 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (129.4324,-3.808889E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (128.3663,-16.36267 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.3499,-9.730635 )
+	rotation: (0,0 ,0 )
+	scale: (6.55,-24.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (133.8212,-15.45091 )
+	rotation: (0,0 ,0 )
+	scale: (12.75002,22.35001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (143.7374,-2.437998 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (144.273,-14.09831 )
+	rotation: (0,0 ,180 )
+	scale: (9.350011,18.55001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (154.8168,-0.3491212 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (155.8431,-0.3189369 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (159.8276,-0.3793075 )
+	rotation: (0,0 ,0 )
+	scale: (11.90001,1.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (173.2692,-0.4486759 )
+	rotation: (0,0 ,0 )
+	scale: (9.850005,1.249999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9768,-8.357831 )
+	rotation: (0,0 ,0 )
+	scale: (1.699999,17.05 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9857,-19.56155 )
+	rotation: (0,0 ,0 )
+	scale: (1.649999,5.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (181.9643,-21.90642 )
+	rotation: (0,0 ,0 )
+	scale: (4.5,0.8999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (185.2539,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (187.828,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (192.7187,-21.75156 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (190.4021,-21.80304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (167.1324,-1.828196 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (184.1558,-26.66091 )
+	rotation: (0,0 ,0 )
+	scale: (35.64998,7.000004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (198.5762,-23.57017 )
+	rotation: (0,0 ,0 )
+	scale: (8.800003,3.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (202.1928,-27.71184 )
+	rotation: (0,0 ,0 )
+	scale: (1.55,5.8 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (207.99,-34.20158 )
+	rotation: (0,0 ,0 )
+	scale: (56.34999,8.600004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (211.5752,-29.92176 )
+	rotation: (0,0 ,0 )
+	scale: (3.9,1.7 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (214.2665,-29.83639 )
+	rotation: (0,0 ,0 )
+	scale: (1.9,3.799999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (216.0401,-27.71398 )
+	rotation: (0,0 ,0 )
+	scale: (4.400003,3.500001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (215.9528,-26.23121 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (220.6338,-26.63824 )
+	rotation: (0,0 ,0 )
+	scale: (5,1.35 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (219.9047,-29.83621 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,0.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (223.7751,-29.7588 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (200.2819,-29.7201 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (230.2519,-29.92565 )
+	rotation: (0,0 ,0 )
+	scale: (5.849999,5.350003 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (221.3745,-51.2594 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (204.4628,-29.96104 )
+	rotation: (0,0 ,0 )
+	scale: (2.45,0.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (207.6245,-30.00771 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (161.6937,1.311782 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (196.339,-20.8577 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (152.6459,-1.42924 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.8095,1.084855 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (146.9736,1.094936 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (145.631,-0.7939525 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (165.9155,-12.02924 )
+	rotation: (0,0 ,359.3839 )
+	scale: (24.6,22.40001 ,1 )
+};
+{
+	prefab_Type:Initial 
+	parent:Boxes
+	position: (-18.15518,-2.566767 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (108.6771,4.131873 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.3669,4.146168 )
+	rotation: (0,0 ,217.7389 )
+	scale: (5.2,1.800001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (107.2324,1.453066 )
+	rotation: (0,0 ,135.4223 )
+	scale: (1.8,3.5 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (102.1175,1.586887 )
+	rotation: (0,0 ,168.4166 )
+	scale: (9.649999,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.97806,2.392973 )
+	rotation: (0,0 ,0 )
+	scale: (10.95001,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (78.31858,-11.66708 )
+	rotation: (0,0 ,221.3956 )
+	scale: (6.100004,3.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-52.47192,-21.17702 )
+	rotation: (0,0 ,0 )
+	scale: (56.20001,2.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (53.04687,-22.30821 )
+	rotation: (0,0 ,173.499 )
+	scale: (16.75,2.1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (84.42729,-10.02499 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (122.57,-2.882371 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (43.28713,-2.547251 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (115.86,5.615192 )
+	rotation: (0,0 ,0 )
+	scale: (10.75001,3.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (117.89,-14.16285 )
+	rotation: (0,0 ,0 )
+	scale: (4.550001,24.69998 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (112.24,8.01 )
+	rotation: (0,0 ,127.6476 )
+	scale: (4.650001,-3.320711 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (106.04,-7.98459 )
+	rotation: (0,0 ,0 )
+	scale: (1.85,1.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (111.5932,-15.68988 )
+	rotation: (0,0 ,0 )
+	scale: (11.1,18.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (103.1955,-9.770408 )
+	rotation: (0,0 ,0 )
+	scale: (5.200001,2.950001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.7041,-14.92893 )
+	rotation: (0,0 ,195.0958 )
+	scale: (11.70001,13.00001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.42,-16.01315 )
+	rotation: (0,0 ,0 )
+	scale: (3.350001,9.500002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.51557,-10.83439 )
+	rotation: (0,0 ,0 )
+	scale: (3.149999,2.399999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.51657,-18.5799 )
+	rotation: (0,0 ,0 )
+	scale: (2.55,13.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.76176,-11.26211 )
+	rotation: (0,0 ,201.0707 )
+	scale: (3.499997,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.18041,-22.58561 )
+	rotation: (0,0 ,0 )
+	scale: (42.74995,6.199999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (94.44417,-16.91688 )
+	rotation: (0,0 ,0 )
+	scale: (2.149999,11.15 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (89.51299,-10.92228 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.93342,-12.32131 )
+	rotation: (0,0 ,0 )
+	scale: (4.349999,2.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.59,7.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.149998,7.580303 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (100.41,5.759091 )
+	rotation: (0,0 ,0 )
+	scale: (3.05,2.000001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (98.18881,4.011318 )
+	rotation: (0,0 ,173.5051 )
+	scale: (3.349998,5.650001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (98.84602,3.405807 )
+	rotation: (0,0 ,179.5138 )
+	scale: (19.59999,3.006375 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (6,-3.045 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.602241 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (21.44,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (49.27718,-12.63657 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.34172 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (14.86,-3.79 )
+	rotation: (0,0 ,0 )
+	scale: (3.571544,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (56.20728,-12.4634 )
+	rotation: (0,0 ,0 )
+	scale: (4.966185,19.97955 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (-2.625,-4.17 )
+	rotation: (0,0 ,0 )
+	scale: (3.321693,4.852125 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (26.5,0.65 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (7.14,-0.57 )
+	rotation: (0,0 ,0 )
+	scale: (1.379812,1.379812 ,1.379812 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (30.76491,-18.47547 )
+	rotation: (0,0 ,0 )
+	scale: (211.7002,7.750002 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (-10.25,-2.59 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (9.29,-12.78 )
+	rotation: (0,0 ,0 )
+	scale: (71.72688,19.33022 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (21.34,-1.9 )
+	rotation: (0,0 ,0 )
+	scale: (12.08862,4.852125 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.15625,-14.72668 )
+	rotation: (0,0 ,173.0488 )
+	scale: (16.4,20.8 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (73.12212,-15.69028 )
+	rotation: (0,0 ,0 )
+	scale: (9.199993,22.44999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (79.54571,-8.903308 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,4.049997 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (75.21915,0.783149 )
+	rotation: (0,0 ,209.1886 )
+	scale: (8.050001,1.750001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (68.73104,-4.479065 )
+	rotation: (0,0 ,215.4175 )
+	scale: (2.699999,2.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (70.71252,-3.766102 )
+	rotation: (0,0 ,179.2696 )
+	scale: (3.15,2.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (86.05087,-11.88431 )
+	rotation: (0,0 ,0 )
+	scale: (4.500002,2.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (82.98808,2.473579 )
+	rotation: (0,0 ,179.7037 )
+	scale: (9.550005,2.099999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (83.51692,7.356894 )
+	rotation: (0,0 ,158.3926 )
+	scale: (2.900001,1.75 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.80385,4.188407 )
+	rotation: (0,0 ,138.1384 )
+	scale: (2.3,3.999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (87.02873,4.699419 )
+	rotation: (0,0 ,0 )
+	scale: (1.45,1.6 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (88.77764,6.168453 )
+	rotation: (0,0 ,0 )
+	scale: (2.7,6.850002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (92.74547,4.571207 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (114.5872,-6.633252 )
+	rotation: (0,0 ,0 )
+	scale: (4.550002,6.85 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (110.8507,-6.466456 )
+	rotation: (0,0 ,0 )
+	scale: (3.849999,2.4 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (112.3838,-5.143413 )
+	rotation: (0,0 ,0 )
+	scale: (2.1,1.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (118.7607,-9.10247 )
+	rotation: (0,0 ,0 )
+	scale: (2.25,4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (119.7226,-7.375063 )
+	rotation: (0,0 ,207.8637 )
+	scale: (3.299999,1.600001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (120.3043,-14.95179 )
+	rotation: (0,0 ,0 )
+	scale: (10.00001,22.14999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (104.78,7.841715 )
+	rotation: (0,0 ,0 )
+	scale: (1.75,1.800001 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (74.56772,1.801111 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (96.3686,6.095974 )
+	rotation: (0,0 ,212.2454 )
+	scale: (1.75,0.9999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (95.96066,4.221663 )
+	rotation: (0,0 ,264.315 )
+	scale: (3.549998,1.55 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (108.0913,8.928963 )
+	rotation: (0,0 ,0 )
+	scale: (2.449999,1.649999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (97.73393,4.631862 )
+	rotation: (0,0 ,220.4224 )
+	scale: (2.799999,2.099999 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Just give up, you will never leave man
+	position: (-14.52227,-2.609958 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Darkness has consumed my soul, i will never leave it, i tried to but this is who i am
+	position: (35.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your hair so scruffy
+	position: (39.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why you never smile, your such a freak
+	position: (46.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Hey loser, why are you crying?
+	position: (56.30224,-2.591602 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: HA HA HA HA
+	position: (62.85073,-3.104799 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: Why is your clothes like that
+	position: (76.79818,3.304271 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text: You will die alone, you deserve nobody
+	position: (98.89632,-9.139252 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (71.56438,-2.67351 )
+	rotation: (0,0 ,167.7585 )
+	scale: (1.5,4.449999 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (73.95847,-4.219104 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (141.705,-3.858768 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (136.6243,-3.811534E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:NPC 
+	parent:Boxes
+	text:Hey soul sister, hey the mister mister on the radio stereo. Habla habla cus cus! I like lamb curry, it tastes good. It's my favourite dish. YAY!
+	position: (125.3428,-12.52505 )
+	rotation: (0,0 ,0 )
+	scale: (1.1,1 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (128.2275,-3.808889E+07 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (128.3663,-16.36267 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (151.3499,-9.730635 )
+	rotation: (0,0 ,0 )
+	scale: (6.55,-24.3 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (124.1922,-11.33304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (133.8212,-15.45091 )
+	rotation: (0,0 ,0 )
+	scale: (12.75002,22.35001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (143.7374,-2.437998 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (144.273,-14.09831 )
+	rotation: (0,0 ,180 )
+	scale: (9.350011,18.55001 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (154.8168,-0.3491212 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (155.8431,-0.3189369 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (159.8276,-0.3793075 )
+	rotation: (0,0 ,0 )
+	scale: (11.90001,1.2 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (173.2692,-0.4486759 )
+	rotation: (0,0 ,0 )
+	scale: (9.850005,1.249999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9768,-8.357831 )
+	rotation: (0,0 ,0 )
+	scale: (1.699999,17.05 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (178.9857,-19.56155 )
+	rotation: (0,0 ,0 )
+	scale: (1.649999,5.550002 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (181.9643,-21.90642 )
+	rotation: (0,0 ,0 )
+	scale: (4.5,0.8999999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (185.2539,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (187.828,-21.90601 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (192.7187,-21.75156 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (190.4021,-21.80304 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (167.1324,-1.828196 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (184.1558,-26.66091 )
+	rotation: (0,0 ,0 )
+	scale: (35.64998,7.000004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (198.5762,-23.57017 )
+	rotation: (0,0 ,0 )
+	scale: (8.800003,3.049999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (202.1928,-27.71184 )
+	rotation: (0,0 ,0 )
+	scale: (1.55,5.8 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (207.99,-34.20158 )
+	rotation: (0,0 ,0 )
+	scale: (56.34999,8.600004 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (211.5752,-29.92176 )
+	rotation: (0,0 ,0 )
+	scale: (3.9,1.7 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (214.2665,-29.83639 )
+	rotation: (0,0 ,0 )
+	scale: (1.9,3.799999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (216.0401,-27.71398 )
+	rotation: (0,0 ,0 )
+	scale: (4.400003,3.500001 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (215.9528,-26.23121 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (220.6338,-26.63824 )
+	rotation: (0,0 ,0 )
+	scale: (5,1.35 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (219.9047,-29.83621 )
+	rotation: (0,0 ,0 )
+	scale: (4.25,0.9 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (223.7751,-29.7588 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (200.2819,-29.7201 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (230.2519,-29.92565 )
+	rotation: (0,0 ,0 )
+	scale: (5.849999,5.350003 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (221.3745,-51.2594 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (204.4628,-29.96104 )
+	rotation: (0,0 ,0 )
+	scale: (2.45,0.95 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (207.6245,-30.00771 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (161.6937,1.311782 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (196.339,-20.8577 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (238.1822,-38.19904 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (330.1685,-49.07865 )
+	rotation: (0,0 ,0 )
+	scale: (22.94996,6.750003 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (332.528,-45.66533 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (338.1786,-45.49558 )
+	rotation: (0,0 ,0 )
+	scale: (8.35,0.6499999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (336.0364,-47.59699 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (341.9413,-48.27867 )
+	rotation: (0,0 ,0 )
+	scale: (0.8000001,4.949999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (352.0214,-51.50534 )
+	rotation: (0,0 ,0 )
+	scale: (20.99999,1.549999 ,1 )
+};
+{
+	prefab_Type:Spawnpoint 
+	parent:Boxes
+	position: (343.366,-50.00658 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (348.625,-42.20261 )
+	rotation: (0,0 ,0 )
+	scale: (14.45001,0.8999997 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (360.9046,-42.20261 )
+	rotation: (0,0 ,0 )
+	scale: (11.30001,0.8999997 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (363.3961,-51.47351 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Turret 
+	parent:Boxes
+	position: (327.8458,-44.34255 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (367.8954,-51.40305 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (371.0669,-54.45415 )
+	rotation: (0,0 ,270 )
+	scale: (-10.19999,5.350017 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (357.8503,-54.2325 )
+	rotation: (0,0 ,180.4382 )
+	scale: (23.69998,2.499999 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (374.9092,-50.89582 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (376.7986,-50.8325 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (378.6036,-54.15751 )
+	rotation: (0,0 ,0 )
+	scale: (18.65,2.4 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (379.3319,-54.09417 )
+	rotation: (0,0 ,0 )
+	scale: (3.049999,8.100005 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (381.3525,-50.17916 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (382.3303,-49.39694 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (386.0784,-46.07249 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (385.231,-46.85471 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (384.2859,-47.73471 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (383.3081,-48.61472 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (365.6848,-51.37079 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (395.3759,-41.99922 )
+	rotation: (0,0 ,0 )
+	scale: (8.300001,2.15 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (390.7214,-41.41571 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (389.7584,-42.36942 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (388.92,-43.26905 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (387.9688,-44.21471 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (387.0562,-45.1273 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (354.8424,-41.12579 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (356.0124,-41.21579 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (321.9898,-43.8894 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:PoemCollectible 
+	parent:Boxes
+	position: (246.6817,-24.30066 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (397.7341,-55.92124 )
+	rotation: (0,0 ,0 )
+	scale: (34.8,9.200008 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (399.8705,-41.41203 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (402.2965,-41.43266 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (420.1981,-45.75155 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (414.1981,-42.27154 )
+	rotation: (0,0 ,0 )
+	scale: (20.7,1.3 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (420.1981,-45.75155 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (420.1981,-45.75155 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (420.8149,-41.67656 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Enemy 
+	parent:Boxes
+	position: (415.1749,-41.67656 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (426.0981,-41.61822 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
+{
+	prefab_Type:Building_Block 
+	parent:Boxes
+	position: (437.2314,-42.75155 )
+	rotation: (0,0 ,0 )
+	scale: (17.05,3.5 ,1 )
+};
+{
+	prefab_Type:Death_Thing 
+	parent:Boxes
+	position: (447.1898,-56.98861 )
+	rotation: (0,0 ,0 )
+	scale: (64.15001,11.2 ,1 )
+};
+{
+	prefab_Type:Mr.BloodBone 
+	parent:Boxes
+	position: (363.7548,-39.96984 )
+	rotation: (0,0 ,0 )
+	scale: (1,1 ,1 )
+};
