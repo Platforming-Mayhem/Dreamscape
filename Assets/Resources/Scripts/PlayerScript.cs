@@ -30,6 +30,7 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private RaRaScript raRa;
+    private Collider2D col;
 
     // Start is called before the first frame update
     private void Start()
@@ -42,6 +43,7 @@ public class PlayerScript : MonoBehaviour
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
         gameObject.SetActive(true);
+        col = GetComponent<Collider2D>();
     }
 
     public float GetMaxHeight()
@@ -287,13 +289,14 @@ public class PlayerScript : MonoBehaviour
 
     private bool jumpStack;
     private float jumpTimer = 0.0f;
+    private float input;
 
     // Update is called once per frame
     private void Update()
     {
+        input = Input.GetAxis("Horizontal");
         CoyoteTime();
         JumpUpdate();
-        AccelerateAndDecelerate(Input.GetAxis("Horizontal"));
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Death();
@@ -317,13 +320,23 @@ public class PlayerScript : MonoBehaviour
         {
             transform.up = Vector3.Lerp(transform.up, Vector3.up, Time.deltaTime * 20.0f);
         }
+        if(Input.GetAxis("Crouch") > 0.0f)
+        {
+            col.transform.localScale = (Vector3.up * 0.5f) + Vector3.right + Vector3.forward;
+            input = Mathf.Clamp(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
+        }
+        else
+        {
+            col.transform.localScale = Vector3.one;
+        }
+        AccelerateAndDecelerate(input);
         ChangeDirection();
         anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x * animationSpeed));
     }
 
     private void LateUpdate()
     {
-        previousX = Input.GetAxis("Horizontal");
+        previousX = input;
         previousGrounded = isGrounded;
     }
 
