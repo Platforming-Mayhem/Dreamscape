@@ -311,11 +311,11 @@ public class PlayerScript : MonoBehaviour
         }
         if(isGrounded || previousGrounded)
         {
-            transform.up = Vector3.Lerp(transform.up, Physics2D.Raycast(groundChecker.transform.position, Vector2.down, radius, groundMask).normal, Time.deltaTime * 10.0f);
+            sprite.transform.up = Vector3.Lerp(sprite.transform.up, Physics2D.Raycast(groundChecker.transform.position, Vector2.down, radius, groundMask).normal, Time.deltaTime * 10.0f);
         }
         else
         {
-            transform.up = Vector3.Lerp(transform.up, Vector3.up, Time.deltaTime * 20.0f);
+            sprite.transform.up = Vector3.Lerp(sprite.transform.up, Vector3.up, Time.deltaTime * 20.0f);
         }
         ChangeDirection();
         anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x * animationSpeed));
