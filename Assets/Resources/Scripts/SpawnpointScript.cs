@@ -15,7 +15,7 @@ public class SpawnpointScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sRenderer = GetComponent<SpriteRenderer>();
+        sRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame

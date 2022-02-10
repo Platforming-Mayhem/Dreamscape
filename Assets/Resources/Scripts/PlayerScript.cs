@@ -173,7 +173,7 @@ public class PlayerScript : MonoBehaviour
                 jumpStack = true;
                 jumpTimer = 0.5f;
             }
-            SetHeight(Mathf.Clamp(height + (Time.deltaTime * 0.9f) * gravityScale * 9.8f, 0.0f, maxHeight));
+            SetHeight(maxHeight);
         }
         if (jumpStack)
         {
