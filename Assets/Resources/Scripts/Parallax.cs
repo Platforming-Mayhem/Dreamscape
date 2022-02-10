@@ -5,7 +5,7 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     [SerializeField] private float Distance;
-    [SerializeField] private Vector3 offset;
+    public Vector3 offset;
     [SerializeField] private bool freezeX;
     [SerializeField] private bool freezeY;
     private Camera cam;

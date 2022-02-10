@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 481002457464841817}
   - component: {fileID: 8531682070534436163}
   - component: {fileID: 1072921111754001786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsSquare
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

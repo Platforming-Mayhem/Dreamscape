@@ -39,4 +39,12 @@ public class MenuScript : MonoBehaviour
     {
         Application.Quit();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            player.Respawn();
+        }
+    }
 }
