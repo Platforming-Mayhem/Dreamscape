@@ -26,4 +26,14 @@ public class HurtPlayerScript : MonoBehaviour
             player.HurtPlayer(amount, transform.position);
         }
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            PlayerScript player = collision.collider.GetComponent<PlayerScript>();
+            player.SetHeight(player.GetMaxHeight());
+            player.HurtPlayer(amount, transform.position);
+        }
+    }
 }

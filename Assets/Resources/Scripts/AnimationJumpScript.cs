@@ -15,4 +15,9 @@ public class AnimationJumpScript : MonoBehaviour
     {
         player.Jump();
     }
+
+    public void PlayStepSFX()
+    {
+        player.PlayFootstep();
+    }
 }

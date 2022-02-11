@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    [SerializeField] private AudioClip Step;
     [SerializeField] private Animator DeathScreen;
     public Transform spawnpoint;
     [SerializeField] private Transform groundChecker;
@@ -28,20 +29,25 @@ public class PlayerScript : MonoBehaviour
     public bool decelerate;
 
     private Rigidbody2D rb;
+    private CapsuleCollider2D capsule;
     private SpriteRenderer sprite;
     private RaRaScript raRa;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        capsule = GetComponent<CapsuleCollider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         raRa = FindObjectOfType<RaRaScript>();
         accelerationEnd = accelerationAndDecelerationCurve.keys[1].time;
         decelerationEnd = accelerationAndDecelerationCurve.keys[2].time;
         xTime = decelerationEnd;
         gameObject.SetActive(true);
+        audioSource = GetComponent<AudioSource>();
+        ySize = capsule.size.y;
     }
 
     public float GetMaxHeight()
@@ -87,6 +93,15 @@ public class PlayerScript : MonoBehaviour
         if (health <= 0)
         {
             Death();
+        }
+    }
+
+    public void PlayFootstep()
+    {
+        if (isGrounded)
+        {
+            audioSource.pitch = Random.Range(0.6f, 1.5f);
+            audioSource.PlayOneShot(Step);
         }
     }
 
@@ -191,6 +206,7 @@ public class PlayerScript : MonoBehaviour
                 jumpStack = false;
             }
         }
+        anim.SetBool("Crouch", Input.GetButton("Crouch"));
     }
 
     private float xTime = 0f;
@@ -217,11 +233,11 @@ public class PlayerScript : MonoBehaviour
         }
         if(rb.velocity.x > 0.0f)
         {
-            sprite.flipX = false;
+            transform.localScale = Vector3.one;
         }
         else if(rb.velocity.x < 0.0f)
         {
-            sprite.flipX = true;
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         }
     }
 
@@ -285,15 +301,35 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private float ySize;
+
+    private void Crouch()
+    {
+        if (anim.GetBool("Crouch"))
+        {
+            horizontal = Mathf.Clamp(horizontal, 0.0f, 0.0f);
+            capsule.size = (Vector2.up * ySize / 2.0f) + (Vector2.right * capsule.size.x);
+            capsule.offset = new Vector2(0.1239169f, -0.17f);
+        }
+        else
+        {
+            capsule.size = (Vector2.up * ySize) + (Vector2.right * capsule.size.x);
+            capsule.offset = new Vector2(0.1239169f, 0.2840676f);
+        }
+    }
+
     private bool jumpStack;
     private float jumpTimer = 0.0f;
+    private float horizontal;
 
     // Update is called once per frame
     private void Update()
     {
+        horizontal = Input.GetAxis("Horizontal");
         CoyoteTime();
         JumpUpdate();
-        AccelerateAndDecelerate(Input.GetAxis("Horizontal"));
+        Crouch();
+        AccelerateAndDecelerate(horizontal);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Death();
@@ -309,21 +345,21 @@ public class PlayerScript : MonoBehaviour
                 raRa.activate = true;
             }
         }
-        if(isGrounded || previousGrounded)
+        /*if(isGrounded || previousGrounded)
         {
             sprite.transform.up = Vector3.Lerp(sprite.transform.up, Physics2D.Raycast(groundChecker.transform.position, Vector2.down, radius, groundMask).normal, Time.deltaTime * 10.0f);
         }
         else
         {
             sprite.transform.up = Vector3.Lerp(sprite.transform.up, Vector3.up, Time.deltaTime * 20.0f);
-        }
+        }*/
         ChangeDirection();
         anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x * animationSpeed));
     }
 
     private void LateUpdate()
     {
-        previousX = Input.GetAxis("Horizontal");
+        previousX = horizontal;
         previousGrounded = isGrounded;
     }
 
