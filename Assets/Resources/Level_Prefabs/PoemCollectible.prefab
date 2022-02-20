@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 5569635380381044697}
   - component: {fileID: 5569635380381044698}
   - component: {fileID: 5569635380381044711}
+  - component: {fileID: 4116390940548910534}
   m_Layer: 0
   m_Name: PoemCollectible
   m_TagString: Untagged
@@ -266,3 +267,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineData: 
+--- !u!114 &4116390940548910534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569635380381044710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fdc3391585c574f98cce0996e1bfdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

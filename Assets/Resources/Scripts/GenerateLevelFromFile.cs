@@ -12,11 +12,14 @@ public class GenerateLevelFromFile : MonoBehaviour
 
     [SerializeField] private GameObject makeSureDelete;
 
+    private DuplicateManager manager;
+
     PlayerScript player;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerScript>();
+        manager = FindObjectOfType<DuplicateManager>();
         Time.timeScale = 0.0f;
     }
 
@@ -135,6 +138,7 @@ public class GenerateLevelFromFile : MonoBehaviour
                     break;
             }
         }
+        manager.RemoveDuplicates();
         try
         {
             player.spawnpoint = GameObject.FindGameObjectWithTag("Initial").transform;

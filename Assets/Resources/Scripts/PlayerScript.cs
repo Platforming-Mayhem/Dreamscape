@@ -288,7 +288,7 @@ public class PlayerScript : MonoBehaviour
         {
             xVelocity = hurtDirection.x;
         }
-        rb.velocity = new Vector2(xVelocity, rb.velocity.y);
+        rb.velocity = transform.rotation * new Vector2(xVelocity, rb.velocity.y);
     }
 
     private float coyoteTimer = 0.0f;
