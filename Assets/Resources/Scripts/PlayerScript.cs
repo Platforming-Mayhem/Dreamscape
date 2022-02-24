@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    [SerializeField] private AudioClip Step;
-    [SerializeField] private Animator DeathScreen;
+    [SerializeField] private ParticleSystem dustKickUp;
+    [SerializeField] private AudioClip step;
+    [SerializeField] private Animator deathScreen;
     public Transform spawnpoint;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private LayerMask groundMask;
@@ -101,7 +102,15 @@ public class PlayerScript : MonoBehaviour
         if (isGrounded)
         {
             audioSource.pitch = Random.Range(0.6f, 1.5f);
-            audioSource.PlayOneShot(Step);
+            audioSource.PlayOneShot(step);
+        }
+    }
+
+    public void PlayDust()
+    {
+        if (isGrounded)
+        {
+            dustKickUp.Emit(5);
         }
     }
 
@@ -121,12 +130,12 @@ public class PlayerScript : MonoBehaviour
         }
         transform.position = spawnpoint.position;
         gameObject.SetActive(true);
-        DeathScreen.SetTrigger("close");
+        deathScreen.SetTrigger("close");
     }
 
     private void Death()
     {
-        DeathScreen.gameObject.SetActive(true);
+        deathScreen.gameObject.SetActive(true);
         gameObject.SetActive(false);
     }
 
@@ -267,8 +276,8 @@ public class PlayerScript : MonoBehaviour
             accelerate = false;
             if (previousX != 0f)
             {
-                decelerate = true;
                 xTime = accelerationEnd;
+                decelerate = true;
             }
         }
         if (accelerate)
@@ -355,10 +364,6 @@ public class PlayerScript : MonoBehaviour
         }*/
         ChangeDirection();
         anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x * animationSpeed));
-    }
-
-    private void LateUpdate()
-    {
         previousX = horizontal;
         previousGrounded = isGrounded;
     }

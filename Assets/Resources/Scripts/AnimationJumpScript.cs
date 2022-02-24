@@ -20,4 +20,9 @@ public class AnimationJumpScript : MonoBehaviour
     {
         player.PlayFootstep();
     }
+
+    public void PlayDust()
+    {
+        player.PlayDust();
+    }
 }
