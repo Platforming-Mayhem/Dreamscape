@@ -5,6 +5,7 @@ using UnityEngine;
 public class HurtPlayerScript : MonoBehaviour
 {
     [SerializeField]private int amount = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,10 @@ public class HurtPlayerScript : MonoBehaviour
             player.SetHeight(player.GetMaxHeight());
             player.HurtPlayer(amount, transform.position);
         }
+        else if (collision.collider.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -34,6 +39,10 @@ public class HurtPlayerScript : MonoBehaviour
             PlayerScript player = collision.collider.GetComponent<PlayerScript>();
             player.SetHeight(player.GetMaxHeight());
             player.HurtPlayer(amount, transform.position);
+        }
+        else if (collision.collider.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

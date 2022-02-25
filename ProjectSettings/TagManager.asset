@@ -8,6 +8,7 @@ TagManager:
   - Spawnpoint
   - Origin
   - Initial
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 701835237
+    locked: 0
+  - name: Rocks
+    uniqueID: 1256829845
     locked: 0
   - name: Player
     uniqueID: 838079289
